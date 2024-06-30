@@ -18,7 +18,7 @@ def navbar():
 
 @app.route('/showcow')
 def showcow():
-    hostname = "localhost"
+    hostname = "istl"
     username = "trainee"
     password = "istl2024"
 
@@ -27,7 +27,7 @@ def showcow():
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
     # Connect to the server
-    client.connect(hostname, port=2222, username=username, password=password)
+    client.connect(hostname, port=22, username=username, password=password)
 
     # Execute commands on the server
     stdin, stdout, stderr = client.exec_command("cat cow.txt")
