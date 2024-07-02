@@ -1,0 +1,25 @@
+services:
+  istl:
+    image: istl_fedora:latest
+    container_name: istl
+    restart: always
+    expose:
+      - 22
+    ports:
+      - 2222:22
+    volumes:
+      - type: bind
+        source: ./mounts/trainee_home
+        target: /home/trainee
+  istl_flask:
+    image: istl_flask:latest
+    container_name: istl_flask
+    expose:
+      - 5000
+    ports:
+      - 8000:5000
+    restart: always
+    volumes:
+      - type: bind
+        source: ./mounts/flask
+        target: /flask

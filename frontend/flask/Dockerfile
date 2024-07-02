@@ -8,10 +8,10 @@ RUN yum -y install python pip
 RUN pip install --upgrade pip
 
 # define the present working directory
-WORKDIR /flask_example
+WORKDIR /flask
 
 # copy the contents into the working dir
-ADD . /flask_example
+ADD . /flask
 COPY app app
 
 # run pip to install the dependencies of the flask app

@@ -18,6 +18,7 @@ RUN sed -i '/tsflags=nodocs/d' /etc/dnf/dnf.conf && \
 	usermod -aG wheel trainee
 
 COPY my_banner_message /etc/motd.d
+COPY cow.txt /home/trainee
 
 EXPOSE 22
 
