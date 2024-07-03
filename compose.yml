@@ -1,6 +1,7 @@
 services:
   istl:
     image: istl_fedora:latest
+    hostname: istl
     container_name: istl
     restart: always
     expose:
@@ -13,6 +14,7 @@ services:
         target: /home/trainee
   istl_flask:
     image: istl_flask:latest
+    hostname: istl_flask
     container_name: istl_flask
     expose:
       - 5000
@@ -23,3 +25,4 @@ services:
       - type: bind
         source: ./mounts/flask
         target: /flask
+        

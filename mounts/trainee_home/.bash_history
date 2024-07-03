@@ -20,3 +20,19 @@ ll
 ll dev/
 ll var/
 clear
+ll
+vim cow.txt 
+neofetch 
+whoami
+ls -l
+cd /
+ll
+hostnamectl 
+host
+clear
+cd
+ll
+pwd
+cat cow.txt 
+ll
+ll /tmp/
