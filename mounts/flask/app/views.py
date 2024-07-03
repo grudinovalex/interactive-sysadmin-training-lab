@@ -3,7 +3,8 @@ from app import app, db
 from datetime import datetime
 from app.forms import *
 import paramiko
-
+from fabric import Connection
+connection = Connection(host = "trainee@istl", connect_kwargs = {"password" : "istl2024"})
 
 
 @app.route('/')
@@ -30,7 +31,7 @@ def showcow():
     client.connect(hostname, port=22, username=username, password=password)
 
     # Execute commands on the server
-    stdin, stdout, stderr = client.exec_command("cat cow.txt")
+    stdin, stdout, stderr = client.exec_command("ls -ld /proc")
     stdin.close()
     output = stdout.read()
     output = output.decode("utf-8")
@@ -43,3 +44,10 @@ def showcow():
     client.close()
 
     return render_template('showcow.html', cow=output)
+
+@app.route('/fabrictest')
+def fabrictest():
+#    connection = Connection(host = "trainee@istl", connect_kwargs = {"password" : "istl2024"})
+    output = connection.run("ls -ld /proc", hide = True).stdout.strip()
+
+    return render_template('fabrictest.html', message=output)
