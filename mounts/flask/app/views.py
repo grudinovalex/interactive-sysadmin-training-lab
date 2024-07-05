@@ -1,9 +1,10 @@
-from flask import render_template
+from flask import render_template, redirect, url_for, flash, request
 from app import app
 from app.forms import *
 import paramiko
 from fabric import Connection
 from functions import cmd
+import time
 connection = Connection(host = "trainee@istl", connect_kwargs = {"password" : "istl2024"})
 
 
@@ -26,3 +27,11 @@ def showcow():
 def fabrictest():
     output = connection.run("ls -ld /proc", hide = True).stdout.strip()
     return render_template('fabrictest.html', message=output, title="Test the fabric module")
+
+@app.route('/exercises/lvl_1', methods=['GET', 'POST'])
+def lvl_1():
+    if request.method == "POST":
+        stdout, stderr = cmd("check1.sh")
+        return render_template('lvl_1.html', title="Level 1", task=stdout)
+    else:
+        return render_template('lvl_1.html', title="Level 1")

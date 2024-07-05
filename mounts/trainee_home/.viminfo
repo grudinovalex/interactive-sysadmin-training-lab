@@ -11,8 +11,14 @@
 # hlsearch on (H) or off (h):
 ~H
 # Command Line History (newest to oldest):
+:q!
+|2,0,1720181521,,"q!"
+:q
+|2,0,1720181520,,"q"
+:w
+|2,0,1720181519,,"w"
 :wq
-|2,0,1719913661,,"wq"
+|2,0,1720181512,,"wq"
 
 # Search String History (newest to oldest):
 
@@ -25,16 +31,33 @@
 # Registers:
 
 # File marks:
-'0  12  25  ~/cow.txt
-|4,48,12,25,1719913661,"~/cow.txt"
+'0  6  1  /usr/local/sbin/check1.sh
+|4,48,6,1,1720181521,"/usr/local/sbin/check1.sh"
+'1  12  25  ~/cow.txt
+|4,49,12,25,1719913661,"~/cow.txt"
 
 # Jumplist (newest first):
+-'  6  1  /usr/local/sbin/check1.sh
+|4,39,6,1,1720181521,"/usr/local/sbin/check1.sh"
+-'  1  0  /usr/local/sbin/check1.sh
+|4,39,1,0,1720181404,"/usr/local/sbin/check1.sh"
+-'  12  25  ~/cow.txt
+|4,39,12,25,1719913661,"~/cow.txt"
 -'  12  25  ~/cow.txt
 |4,39,12,25,1719913661,"~/cow.txt"
 -'  1  0  ~/cow.txt
 |4,39,1,0,1719913650,"~/cow.txt"
+-'  1  0  ~/cow.txt
+|4,39,1,0,1719913650,"~/cow.txt"
 
 # History of marks within files (newest to oldest):
+
+> /usr/local/sbin/check1.sh
+	*	1720181511	0
+	"	6	1
+	^	6	2
+	.	6	1
+	+	6	1
 
 > ~/cow.txt
 	*	1719913659	0
