@@ -1,9 +1,9 @@
-from flask import render_template, redirect, url_for, flash
-from app import app, db
-from datetime import datetime
+from flask import render_template
+from app import app
 from app.forms import *
 import paramiko
 from fabric import Connection
+from functions import cmd
 connection = Connection(host = "trainee@istl", connect_kwargs = {"password" : "istl2024"})
 
 
@@ -43,7 +43,9 @@ def showcow():
     # Close the SSH connection
     client.close()
 
-    return render_template('showcow.html', cow=output)
+    stdout, stderr = cmd("cat cow.txt")
+
+    return render_template('showcow.html', cow=output, cow2=stdout)
 
 @app.route('/fabrictest')
 def fabrictest():

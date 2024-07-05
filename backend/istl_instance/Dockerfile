@@ -7,6 +7,9 @@ SHELL ["/bin/bash", "-c"]
 RUN sed -i '/tsflags=nodocs/d' /etc/dnf/dnf.conf && \
 	yum update -y && \
 	yum upgrade -y && \
+  rpm -qa | sort | sed 's/-[0-9].*[0-9]*//g' | xargs dnf -y reinstall && \
+  yum update -y && \
+  yum upgrade -y && \
 	yum install -y man-pages man-db man ncurses vim groff neofetch cowsay htop openssh-server cracklib-dicts && \
 	mandb && \
 	dnf update && \
