@@ -17,6 +17,7 @@
 <header class="site-header">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
         <div class="container-fluid">
+            <a class="navbar-brand mb-0 h1" >ISTL</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,6 +26,16 @@
                     <a class="nav-item nav-link" href="{{ url_for('index') }}">Home</a>
                     <a class="nav-item nav-link" href="{{ url_for('showcow') }}">Show Cow</a>
                     <a class="nav-item nav-link" href="{{ url_for('fabrictest') }}">Fabric test</a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Exercises
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Level 1</a></li>
+                        <li><a class="dropdown-item" href="#">Level 2</a></li>
+                        <li><a class="dropdown-item" href="#">Level 3</a></li>
+                      </ul>
+                    </li>
                 </div>
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="{{ url_for('navbar') }}">Nav Bar</a>
