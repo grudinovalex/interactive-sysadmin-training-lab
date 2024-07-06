@@ -36,3 +36,15 @@ pwd
 cat cow.txt 
 ll
 ll /tmp/
+w
+ps uax
+ps aux
+ps aux | grep root
+ps aux | grep trainee
+ll
+rm check1.sh 
+ll
+rm my_first_file 
+ll
+touch my_first_file
+ll

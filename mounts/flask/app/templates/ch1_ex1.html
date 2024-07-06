@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<body>
+<h1>Chapter 1</h1>
+<hr class="default">
+<h3>1. I'm in...</h3>
+<h5>Connect to your ISTL machine using <i>SSH</i> using the port 2222 instead of the default 22</h5>
+<p>.<br>.<br>.<br></p>
+<form action="#" method="post">
+    <h5><input type="submit" value="Check" /></h5>
+</form>
+
+{% if task == 'correct' %}
+    <p>.<br>.<br>.<br></p>
+    <h5 style="color:green; border: 2px solid Green"> WELL DONE! YOU HAVE COMPLETED THE TASK </h5>
+{% elif task == 'incorrect' %}
+    <p>.<br>.<br>.<br></p>
+    <h5 style="color:red; border: 2px solid Red"> TRY AGAIN! </h5>
+{% endif %}
+
+{% if task == 'correct' %}
+    <hr class="default">
+    <p style="text-align:center;">
+        <button onclick="document.location='{{ url_for('ch1') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch1_ex2') }}'">Next--></button>
+    </p>
+{% else %}
+    <hr class="default">
+    <p style="text-align:center;">
+        <button onclick="document.location='{{ url_for('ch1') }}'"><--Previous</button>
+        <button style="background-color:red; color:white" onclick="document.location='{{ url_for('ch1_ex2') }}' disabled">Next--></button>
+    </p>
+{% endif %}
+</body>
+
+
+{% endblock %}

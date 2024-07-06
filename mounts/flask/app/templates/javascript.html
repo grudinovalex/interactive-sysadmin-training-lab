@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+    <div id="container"></div>
+
+    <script>
+        function displayDot() {
+            const container = document.getElementById('container');
+            const dot = document.createElement('div');
+            dot.className = 'dot';
+            dot.textContent = '.';
+            container.appendChild(dot);
+        }
+
+        function startDisplayingDots() {
+            setTimeout(() => {
+                displayDot();
+                    setTimeout(() => {
+                        displayDot();
+                            setTimeout(() => {
+                                displayDot();
+                                }, 400);
+                            }, 400);
+                        }, 400);
+                    }
+
+        startDisplayingDots();
+    </script>
+</body>
+{% endblock %}
+

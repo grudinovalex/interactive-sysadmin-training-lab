@@ -31,10 +31,10 @@ import paramiko
 # # Close the SSH connection
 # client.close()
 
-def cmd(command):
+def cmd(command, user):
     # Define server variables
     hostname = "localhost"
-    username = "trainee"
+    username = user
     password = "istl2024"
 
     # Create an SSH client instance & connect to server
@@ -54,6 +54,6 @@ def cmd(command):
     client.close()
     return stdout_output, stderr_output
 
-stdout, stderr = cmd("find / -maxdepth 2")
+stdout, stderr = cmd("find / -maxdepth 2", "root")
 
 print(stderr)

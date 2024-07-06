@@ -1,0 +1,9 @@
+#!/bin/bash
+CODE=$(ps aux | grep -c trainee)
+
+if [ $CODE -eq 1 ]; then
+	echo "incorrect"
+else
+	echo "correct"
+fi
+

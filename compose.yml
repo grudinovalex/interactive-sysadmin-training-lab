@@ -12,6 +12,9 @@ services:
       - type: bind
         source: ./mounts/trainee_home
         target: /home/trainee
+      - type: bind
+        source: ./mounts/usr_local_bin
+        target: /usr/local/bin
   istl_flask:
     image: istl_flask:latest
     hostname: istl_flask

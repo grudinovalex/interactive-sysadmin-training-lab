@@ -3,9 +3,10 @@
 {% block content %}
 
 <body>
-<h1>ISTL Level 1</h1>
+<h1>Chapter 1</h1>
 <hr class="default">
-<h5><b>Exercise 1:</b> Create a file called <i>'my_first_file'</i> in your home directory</h5>
+<h3>2. Golden touch</h3>
+<h5>Create a file called <i>'my_first_file'</i> in your home directory</h5>
 <p>.<br>.<br>.<br></p>
 <form action="#" method="post">
     <h5><input type="submit" value="Check" /></h5>
@@ -18,7 +19,14 @@
     <p>.<br>.<br>.<br></p>
     <h5 style="color:red; border: 2px solid Red"> TRY AGAIN! </h5>
 {% endif %}
+
+
+<hr class="default">
+<p style="text-align:center;">
+    <button onclick="document.location='{{ url_for('ch1_ex1') }}'"><--Previous</button>
+    <button onclick="document.location='{{ url_for('ch1_ex1') }}'">Next--></button>
+</p>
 </body>
 
-{% endblock %}
 
+{% endblock %}

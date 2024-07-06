@@ -1,10 +1,10 @@
 import paramiko
 
 # Executes 'command' on the ISTL machine, returns standard output & standard error
-def cmd(command):
+def cmd(command, user):
     # Define server variables
     hostname = "istl"
-    username = "trainee"
+    username = user
     password = "istl2024"
 
     # Create an SSH client instance & connect to server
@@ -22,7 +22,7 @@ def cmd(command):
 
     # Close SSH connection
     client.close()
-    return stdout_output, stderr_output
+    return stdout_output
 
 if __name__ == "__main__":
     main()

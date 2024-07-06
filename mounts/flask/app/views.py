@@ -5,7 +5,7 @@ import paramiko
 from fabric import Connection
 from functions import cmd
 import time
-connection = Connection(host = "trainee@istl", connect_kwargs = {"password" : "istl2024"})
+# connection = Connection(host = "trainee@istl", connect_kwargs = {"password" : "istl2024"})
 
 
 @app.route('/')
@@ -31,7 +31,27 @@ def fabrictest():
 @app.route('/exercises/lvl_1', methods=['GET', 'POST'])
 def lvl_1():
     if request.method == "POST":
-        stdout, stderr = cmd("check1.sh")
+        stdout = cmd("check1.sh")
         return render_template('lvl_1.html', title="Level 1", task=stdout)
     else:
         return render_template('lvl_1.html', title="Level 1")
+
+@app.route('/chapter1')
+def ch1():
+    return render_template('chapter1.html', title="Chapter 1")
+
+@app.route('/chapter1/ex1', methods=['GET', 'POST'])
+def ch1_ex1():
+    if request.method == "POST":
+        stdout = cmd("ch1_ex1_check", "root")
+        return render_template('ch1_ex1.html', title="Chapter 1, Exercise 1", task=stdout)
+    else:
+        return render_template('ch1_ex1.html', title="Chapter 1, Exercise 1")
+
+@app.route('/chapter1/ex2', methods=['GET', 'POST'])
+def ch1_ex2():
+    if request.method == "POST":
+        stdout = cmd("ch1_ex2_check", "trainee")
+        return render_template('ch1_ex2.html', title="Chapter 1, Exercise 2", task=stdout)
+    else:
+        return render_template('ch1_ex2.html', title="Chapter 1, Exercise 2")
