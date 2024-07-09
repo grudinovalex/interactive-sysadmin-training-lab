@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -e "/home/trainee/tarantino/pulp_fiction" ] && 
+   [ -e "/home/trainee/tarantino/kill_bill_1" ] &&
+   [ -e "/home/trainee/tarantino/kill_bill_2" ] 
+then
+    echo 'correct'
+else
+    echo 'incorrect'
+fi

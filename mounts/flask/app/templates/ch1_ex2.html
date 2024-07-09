@@ -14,18 +14,37 @@
 
 {% if task == 'correct' %}
     <p>.<br>.<br>.<br></p>
-    <h5 style="color:green; border: 2px solid Green"> WELL DONE! YOU HAVE COMPLETED THE TASK </h5>
+    <h5 style="color:green; border: 2px solid Green"> TASK COMPLETE! Press 'Next' to continue </h5>
 {% elif task == 'incorrect' %}
     <p>.<br>.<br>.<br></p>
-    <h5 style="color:red; border: 2px solid Red"> TRY AGAIN! </h5>
+    <h5 style="color:red; border: 2px solid Red"> TASK FAILED! Try again </h5>
+    {% if count is defined and count >= 4 %}
+    <h6 style="color:darkslategray; border: 2px solid darkslategray">
+    <details>
+    <summary>
+    Show hint:
+    <span class="icon">👇</span>
+    </summary>
+    Use the command 'touch'.
+    </details>
+    </h6>
+    {% endif %}
 {% endif %}
 
 
-<hr class="default">
-<p style="text-align:center;">
-    <button onclick="document.location='{{ url_for('ch1_ex1') }}'"><--Previous</button>
-    <button onclick="document.location='{{ url_for('ch1_ex1') }}'">Next--></button>
-</p>
+{% if task == 'correct' %}
+    <hr class="default">
+    <p style="text-align:center;">
+        <button onclick="document.location='{{ url_for('ch1_ex1') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch1_ex3') }}'">Next--></button>
+    </p>
+{% else %}
+    <hr class="default">
+    <p style="text-align:center;">
+        <button onclick="document.location='{{ url_for('ch1_ex1') }}'"><--Previous</button>
+        <button style="background-color:red; color:white" onclick="document.location='{{ url_for('ch1_ex3') }}' disabled">Next--></button>
+    </p>
+{% endif %}
 </body>
 
 

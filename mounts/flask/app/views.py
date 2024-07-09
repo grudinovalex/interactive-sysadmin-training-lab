@@ -14,9 +14,9 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/navbar')
+@app.route('/about')
 def navbar():
-    return render_template('navbar.html')
+    return render_template('about.html')
 
 @app.route('/showcow')
 def showcow():
@@ -40,18 +40,41 @@ def lvl_1():
 def ch1():
     return render_template('chapter1.html', title="Chapter 1")
 
+ch1ex1_count = 0
 @app.route('/chapter1/ex1', methods=['GET', 'POST'])
 def ch1_ex1():
     if request.method == "POST":
         stdout = cmd("ch1_ex1_check", "root")
-        return render_template('ch1_ex1.html', title="Chapter 1, Exercise 1", task=stdout)
+        global ch1ex1_count
+        ch1ex1_count += 1
+        if ch1ex1_count > 10:
+            ch1ex1_count = 0
+        return render_template('ch1_ex1.html', title="Chapter 1, Exercise 1", task=stdout, count=ch1ex1_count)
     else:
         return render_template('ch1_ex1.html', title="Chapter 1, Exercise 1")
 
+ch1ex2_count = 0
 @app.route('/chapter1/ex2', methods=['GET', 'POST'])
 def ch1_ex2():
     if request.method == "POST":
         stdout = cmd("ch1_ex2_check", "trainee")
-        return render_template('ch1_ex2.html', title="Chapter 1, Exercise 2", task=stdout)
+        global ch1ex2_count
+        ch1ex2_count += 1
+        if ch1ex2_count > 10:
+            ch1ex2_count = 0
+        return render_template('ch1_ex2.html', title="Chapter 1, Exercise 2", task=stdout, count=ch1ex2_count)
     else:
         return render_template('ch1_ex2.html', title="Chapter 1, Exercise 2")
+
+ch1ex3_count = 0
+@app.route('/chapter1/ex3', methods=['GET', 'POST'])
+def ch1_ex3():
+    if request.method == "POST":
+        stdout = cmd("ch1_ex3_check", "trainee")
+        global ch1ex3_count
+        ch1ex3_count += 1
+        if ch1ex3_count > 10:
+            ch1ex3_count = 0
+        return render_template('ch1_ex3.html', title="Chapter 1, Exercise 3", task=stdout, count=ch1ex3_count)
+    else:
+        return render_template('ch1_ex3.html', title="Chapter 1, Exercise 3")

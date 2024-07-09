@@ -54,6 +54,11 @@ def cmd(command, user):
     client.close()
     return stdout_output, stderr_output
 
-stdout, stderr = cmd("find / -maxdepth 2", "root")
+stdout, stderr = cmd("ch1_ex1_check", "root")
+count = 0
+if stdout == 'incorrect':
+    count += 1
 
-print(stderr)
+
+print(stdout)
+print(count)
