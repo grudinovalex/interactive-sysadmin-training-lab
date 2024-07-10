@@ -1,0 +1,16 @@
+#!/bin/bash
+
+FILMS="alien django_unchained inglourious_basterds jackie_brown once_upon_a_time_in_hollywood reservoir_dogs the_hateful_eight the_thing kill_bill_1 kill_bill_2 pulp_fiction"
+RESULT=""
+
+for FILM in $FILMS; do
+	if [ -e "/home/trainee/tarantino/${FILM}" ] && [ ! -e "/home/trainee/Files/${FILM}" ]
+	then
+		RESULT="correct"
+  	else
+    	RESULT="incorrect"
+		break
+	fi
+done
+
+echo $RESULT

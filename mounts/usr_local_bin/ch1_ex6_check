@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ ! -e "/home/trainee/Movies/tarantino/alien" ] && 
+   [ ! -e "/home/trainee/Movies/tarantino/the_thing" ] &&
+   [ ! -e "/home/trainee/tarantino/" ]
+then
+    echo 'correct'
+else
+    echo 'incorrect'
+fi

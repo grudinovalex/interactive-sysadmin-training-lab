@@ -43,14 +43,14 @@ In it, create 3 files called:
 {% if task == 'correct' %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch1_ex2') }}'"><--Previous</button>
-        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch1_ex4') }}'">Next--></button>
+        <button onclick="document.location='{{ url_for('ch1_ex2', method='POST') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ '#' }}'">Next--></button>
     </p>
 {% else %}
     <hr class="default">
     <p style="text-align:center;">
         <button onclick="document.location='{{ url_for('ch1_ex2') }}'"><--Previous</button>
-        <button style="background-color:red; color:white" onclick="document.location='{{ url_for('ch1_ex2') }}' disabled">Next--></button>
+        <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
     </p>
 {% endif %}
 </body>

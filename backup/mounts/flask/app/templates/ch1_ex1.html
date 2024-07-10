@@ -5,16 +5,8 @@
 <body>
 <h1>Chapter 1</h1>
 <hr class="default">
-<h3>3. DIRected by: Quentin Tarantino</h3>
-<h5>
-In your <b>home</b> create a directory <i>'tarantino'</i><br><br>
-In it, create 3 files called:
-<ul>
-    <li><i>'pulp_fiction'</i></li>
-    <li><i>'kill_bill_1'</i></li>
-    <li><i>'kill_bill_2'</i></li>
-</ul>
-</h5>
+<h3>1. I'm in...</h3>
+<h5>Connect to your ISTL machine using <i>SSH</i> using the port 2222 instead of the default 22</h5>
 <p>.<br>.<br>.<br></p>
 <form action="#" method="post">
     <h5><input type="submit" value="Check" /></h5>
@@ -33,23 +25,23 @@ In it, create 3 files called:
     Show hint:
     <span class="icon">👇</span>
     </summary>
-    Use the 'mkdir' & 'touch' commands
+    Execute the connect.sh script by typing ./connect.sh in your
+    terminal in the interactive-sysadmin-training-lab folder
     </details>
     </h6>
     {% endif %}
 {% endif %}
 
-
 {% if task == 'correct' %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch1_ex2') }}'"><--Previous</button>
-        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch1_ex4') }}'">Next--></button>
+        <button onclick="document.location='{{ url_for('ch1') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch1_ex2') }}'">Next--></button>
     </p>
 {% else %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch1_ex2') }}'"><--Previous</button>
+        <button onclick="document.location='{{ url_for('ch1') }}'"><--Previous</button>
         <button style="background-color:red; color:white" onclick="document.location='{{ url_for('ch1_ex2') }}' disabled">Next--></button>
     </p>
 {% endif %}

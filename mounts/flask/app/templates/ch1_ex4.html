@@ -5,15 +5,10 @@
 <body>
 <h1>Chapter 1</h1>
 <hr class="default">
-<h3>3. DIRected by: Quentin Tarantino</h3>
+<h3>4. I like to move it</h3>
 <h5>
-In your <b>home</b> create a directory <i>'tarantino'</i><br><br>
-In it, create 3 files called:
-<ul>
-    <li><i>'pulp_fiction'</i></li>
-    <li><i>'kill_bill_1'</i></li>
-    <li><i>'kill_bill_2'</i></li>
-</ul>
+Move all the files from <i>'~/Files'</i> directory into the <i>'~/tarantino' directory</i><br>
+(make use of the * <a href="https://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm" target="_blank">wildcard</a>)
 </h5>
 <p>.<br>.<br>.<br></p>
 <form action="#" method="post">
@@ -33,7 +28,8 @@ In it, create 3 files called:
     Show hint:
     <span class="icon">👇</span>
     </summary>
-    Use the 'mkdir' & 'touch' commands
+    Use the 'mv' command <br>
+    (usage: mv SOURCE DESTINATION)
     </details>
     </h6>
     {% endif %}
@@ -43,14 +39,14 @@ In it, create 3 files called:
 {% if task == 'correct' %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch1_ex2') }}'"><--Previous</button>
-        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch1_ex4') }}'">Next--></button>
+        <button onclick="document.location='{{ url_for('ch1_ex3') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch1_ex5') }}'">Next--></button>
     </p>
 {% else %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch1_ex2') }}'"><--Previous</button>
-        <button style="background-color:red; color:white" onclick="document.location='{{ url_for('ch1_ex2') }}' disabled">Next--></button>
+        <button onclick="document.location='{{ url_for('ch1_ex3') }}'"><--Previous</button>
+        <button style="background-color:red; color:white" onclick="document.location='{{ url_for('ch1_ex5') }}' disabled">Next--></button>
     </p>
 {% endif %}
 </body>

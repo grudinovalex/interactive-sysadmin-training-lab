@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<body>
+<h1>ISTL Level 1</h1>
+<hr class="default">
+<h5><b>Exercise 1:</b> Create a file called <i>'my_first_file'</i> in your home directory</h5>
+<p>.<br>.<br>.<br></p>
+<form action="#" method="post">
+    <h5><input type="submit" value="Check" /></h5>
+</form>
+
+{% if task == 'correct' %}
+    <p>.<br>.<br>.<br></p>
+    <h5 style="color:green; border: 2px solid Green"> WELL DONE! YOU HAVE COMPLETED THE TASK </h5>
+{% elif task == 'incorrect' %}
+    <p>.<br>.<br>.<br></p>
+    <h5 style="color:red; border: 2px solid Red"> TRY AGAIN! </h5>
+{% endif %}
+</body>
+
+{% endblock %}
+
