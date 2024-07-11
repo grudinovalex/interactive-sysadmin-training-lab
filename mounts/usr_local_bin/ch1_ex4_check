@@ -4,7 +4,7 @@ FILMS="alien django_unchained inglourious_basterds jackie_brown once_upon_a_time
 RESULT=""
 
 for FILM in $FILMS; do
-	if [ -e "/home/trainee/tarantino/${FILM}" ] && [ ! -e "/home/trainee/Files/${FILM}" ]
+	if [ -e "/home/trainee/chapter_1/tarantino/${FILM}" ] && [ ! -e "/home/trainee/chapter_1/Files/${FILM}" ]
 	then
 		RESULT="correct"
   	else

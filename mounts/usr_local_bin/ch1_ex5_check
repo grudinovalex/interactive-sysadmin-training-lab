@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -e "/home/trainee/Movies/tarantino/" ] && [ -e "/home/trainee/tarantino/" ]
+if [ -e "/home/trainee/chapter_1/Movies/tarantino/" ] && [ -e "/home/trainee/chapter_1/tarantino/" ]
 then
     echo 'correct'
 else

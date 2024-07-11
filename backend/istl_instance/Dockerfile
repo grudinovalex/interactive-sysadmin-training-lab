@@ -18,7 +18,8 @@ RUN sed -i '/tsflags=nodocs/d' /etc/dnf/dnf.conf && \
 	ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N '' && \
 	adduser trainee && \
 	echo 'istl2024' | passwd --stdin trainee && \
-	usermod -aG wheel trainee
+	usermod -aG wheel trainee && \
+  mkdir /mnt/host
 
 COPY my_banner_message /etc/motd.d
 COPY cow.txt /home/trainee

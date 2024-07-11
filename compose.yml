@@ -15,6 +15,9 @@ services:
       - type: bind
         source: ./mounts/usr_local_bin
         target: /usr/local/bin
+      - type: bind
+        source: ./mounts/mnt_host
+        target: /mnt/host
   istl_flask:
     image: istl_flask:latest
     hostname: istl_flask
@@ -28,3 +31,12 @@ services:
       - type: bind
         source: ./mounts/flask
         target: /flask
+  server:
+    image: istl_fedora:latest
+    hostname: server
+    container_name: istl_server
+    restart: always
+    expose:
+      - 22
+    ports:
+      - 2223:22

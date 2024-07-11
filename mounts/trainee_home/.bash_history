@@ -161,3 +161,71 @@ tr 't' 'T' < auta.txt | tee asdfasdf
 ll
 cat asdfasdf 
 rm asdfasdf 
+ll
+ll /mnt/
+ll /mnt/host/
+cd /mnt/host/
+ll
+cp -r /
+cp -r ~/original_home/ .
+ll
+cd
+ll
+rm -r original_home/
+l
+ll
+ping server
+ssh trainee@server
+sudo yum install netstat
+clear
+ping server
+apropos path
+ping 192.168.160.2
+hostnamectl 192.168.160.2
+hostid 192.168.160.2
+host 192.168.160.2
+ping server
+clear
+ll
+ll /mnt/host/original_home/
+ll
+mkdir chapter_1
+ll
+rm -r Files/ Movies/ my_first_file 
+ll
+cp -r /mnt/host/original_home/ chapter_1/
+ll
+tree
+clear
+ll
+cd chapter_1/
+ll
+ll original_home/
+mv original_home/* .
+ll
+rm -r original_home/
+clear
+ll
+touch my_first_file
+ll
+mkdir tarantino
+cd tarantino/
+lll
+ll
+touch pulp_fiction kill_bill_1 kill_bill_2
+cd ..
+ll Files/
+ll
+mv Files/* tarantino/
+ll
+cp -r tarantino/ Movies/
+clear
+ll
+rm -r tarantino/
+cd Files/
+ll
+cd ../Movies/
+ll
+cd tarantino/
+ll
+rm alien the_thing 

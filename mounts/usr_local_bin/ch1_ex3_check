@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [ -e "/home/trainee/tarantino/pulp_fiction" ] && 
-   [ -e "/home/trainee/tarantino/kill_bill_1" ] &&
-   [ -e "/home/trainee/tarantino/kill_bill_2" ] 
+if [ -e "/home/trainee/chapter_1/tarantino/pulp_fiction" ] && 
+   [ -e "/home/trainee/chapter_1/tarantino/kill_bill_1" ] &&
+   [ -e "/home/trainee/chapter_1/tarantino/kill_bill_2" ] 
 then
     echo 'correct'
 else
