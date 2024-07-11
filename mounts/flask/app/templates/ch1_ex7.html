@@ -5,13 +5,11 @@
 <body>
 <h1>Chapter 1</h1>
 <hr class="default">
-<h3>6. I like remove it (...move it)</h3>
+<h3>7. Move == Rename</h3>
 <h5>
-    Remove the <b><i>'tarantino'</i></b> folder<br>
-    Remove the <b><i>'the_thing'</i></b> & <b><i>'alien'</i></b> files from <b><i>'Movies/tarantino/'</i></b><br>
+    While going through your DVD collection, you notice a typo<br>
+    Chage the name of the file the <b><i>'the_hateful_seven'</i></b> to <b><i>'the_hateful_eight'</i></b><br>
 </h5>
-<p>(Tarantino does not make science fiction films)</p>
-
 <p>.<br>.<br>.<br></p>
 <form action="#" method="post">
     <h5><input type="submit" value="Check" /></h5>
@@ -28,9 +26,10 @@
     <details>
     <summary>
     Show hint:
-    <span class="icon">👇</span>
+    <span class="icon">⬇️</span>
     </summary>
-    Use the 'rm' command, with the '-r' option where needed
+    Use the 'mv' command, but instead of moving a file from one location to another,
+    move its 'old name' to a 'new name'
     </details>
     </h6>
     {% endif %}
@@ -40,14 +39,14 @@
 {% if task == 'correct' %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch1_ex5') }}'"><--Previous</button>
-        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch1_ex7') }}'">Next--></button>
+        <button onclick="document.location='{{ url_for('ch1_ex6') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch1_ex8') }}'">Next--></button>
     </p>
 {% else %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch1_ex5') }}'"><--Previous</button>
-        <button style="background-color:red; color:white" onclick="document.location='{{ url_for('ch1_ex7') }}'" disabled">Next--></button>
+        <button onclick="document.location='{{ url_for('ch1_ex6') }}'"><--Previous</button>
+        <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
     </p>
 {% endif %}
 </body>

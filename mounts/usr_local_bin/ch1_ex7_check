@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ ! -e "/home/trainee/chapter_1/Movies/tarantino/the_hateful_seven" ] && 
+   [ -e "/home/trainee/chapter_1/Movies/tarantino/the_hateful_eight" ]
+then
+    echo 'correct'
+else
+    echo 'incorrect'
+fi

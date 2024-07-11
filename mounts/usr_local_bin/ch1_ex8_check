@@ -1,0 +1,22 @@
+#!/bin/bash
+
+RESULT=""
+
+for X in file{00..50}; do
+	if [ -e "/home/trainee/chapter_1/Files/${X}" ]
+	then
+		RESULT="correct"
+  	else
+    	RESULT="incorrect"
+		break
+	fi
+done
+
+#echo $RESULT
+#
+#for X in file{00..50}; do
+#	echo $X
+#done
+
+
+echo $RESULT

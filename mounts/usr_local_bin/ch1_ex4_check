@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILMS="alien django_unchained inglourious_basterds jackie_brown once_upon_a_time_in_hollywood reservoir_dogs the_hateful_eight the_thing kill_bill_1 kill_bill_2 pulp_fiction"
+FILMS="alien django_unchained inglourious_basterds jackie_brown once_upon_a_time_in_hollywood reservoir_dogs the_hateful_seven the_thing kill_bill_1 kill_bill_2 pulp_fiction"
 RESULT=""
 
 for FILM in $FILMS; do

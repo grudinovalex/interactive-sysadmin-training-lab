@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+<h1>Chapter 1</h1>
+<hr class="default">
+<h3>Exercises:</h3>
+<ol>
+    <li><a href="{{ url_for('ch1_ex1') }}">I'm in...</a></li>
+    <li><a href="{{ url_for('ch1_ex2') }}">Golden touch</a></li>
+    <li><a href="{{ url_for('ch1_ex3') }}">DIRected by: Quentin Tarantino</a></li>
+    <li><a href="{{ url_for('ch1_ex4') }}">I like to move it</a></li>
+    <li><a href="{{ url_for('ch1_ex5') }}">I like to copy it (recursively) / Copycat</a></li>
+    <li><a href="{{ url_for('ch1_ex6') }}">I like to remove it (...move it)</a></li>
+    <li><a href="{{ url_for('ch1_ex7') }}">Move == Rename</a></li>
+    <li><a href="{{ url_for('ch1_ex8') }}">Creating multiple files</a></li>
+</ol>
+<hr class="default">
+<p style="text-align:center;">
+    <button onclick="document.location='{{ url_for('ch1_ex1') }}'">Start</button>
+</p>
+</body>
+
+{% endblock %}

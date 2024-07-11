@@ -38,7 +38,7 @@ def lvl_1():
 
 @app.route('/chapter1')
 def ch1():
-    return render_template('chapter1.html', title="Chapter 1")
+    return render_template('ch1.html', title="Chapter 1")
 
 ch1ex1_count = 0
 @app.route('/chapter1/ex1', methods=['GET', 'POST'])
@@ -103,7 +103,7 @@ def ch1_ex5():
             ch1ex5_count = 0
         return render_template('ch1_ex5.html', title="Chapter 1, Exercise 5", task=stdout, count=ch1ex5_count)
     else:
-        return render_template('ch1_ex5.html', title="Chapter 1, Exercise 4")
+        return render_template('ch1_ex5.html', title="Chapter 1, Exercise 5")
 
 ch1ex6_count = 0
 @app.route('/chapter1/ex6', methods=['GET', 'POST'])
@@ -112,8 +112,38 @@ def ch1_ex6():
         stdout = cmd("ch1_ex6_check", "trainee")
         global ch1ex6_count
         ch1ex6_count += 1
-        if ch1ex5_count > 10:
+        if ch1ex6_count > 10:
             ch1ex6_count = 0
         return render_template('ch1_ex6.html', title="Chapter 1, Exercise 6", task=stdout, count=ch1ex6_count)
     else:
-        return render_template('ch1_ex6.html', title="Chapter 1, Exercise 4")
+        return render_template('ch1_ex6.html', title="Chapter 1, Exercise 6")
+
+ch1ex7_count = 0
+@app.route('/chapter1/ex7', methods=['GET', 'POST'])
+def ch1_ex7():
+    if request.method == "POST":
+        stdout = cmd("ch1_ex7_check", "trainee")
+        global ch1ex7_count
+        ch1ex7_count += 1
+        if ch1ex7_count > 10:
+            ch1ex7_count = 0
+        return render_template('ch1_ex7.html', title="Chapter 1, Exercise 7", task=stdout, count=ch1ex7_count)
+    else:
+        return render_template('ch1_ex7.html', title="Chapter 1, Exercise 7")
+
+ch1ex8_count = 0
+@app.route('/chapter1/ex8', methods=['GET', 'POST'])
+def ch1_ex8():
+    if request.method == "POST":
+        stdout = cmd("ch1_ex8_check", "trainee")
+        global ch1ex8_count
+        ch1ex8_count += 1
+        if ch1ex8_count > 10:
+            ch1ex8_count = 0
+        return render_template('ch1_ex8.html', title="Chapter 1, Exercise 8", task=stdout, count=ch1ex8_count)
+    else:
+        return render_template('ch1_ex8.html', title="Chapter 1, Exercise 8")
+
+@app.route('/chapter1/complete')
+def ch1_complete():
+    return render_template('ch1_complete.html', title="Chapter 1 complete")
