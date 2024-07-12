@@ -12,7 +12,7 @@
     {% else %}
     <title>Welcome to ISTL</title>
     {% endif %}
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon2.ico') }}">
 </head>
 <body>
 <header class="site-header">
@@ -28,6 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarToggle">
                 <div class="navbar-nav me-auto">
                     <a class="nav-item nav-link" href="{{ url_for('index') }}">Home</a>
+                    <a class="nav-item nav-link" href="http://localhost:3000/wetty" target="_blank">Linux Machine</a>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Chapters
@@ -66,9 +67,9 @@
                 <h3>Interactive SysAdmin Training Lab</h3>
                 <p class='text-muted'>Project by Alexandr Grudinov for the 2024 Computer Science MSc programme</p>
                 <ul class="list-group">
-                    <li class="list-group-item list-group-item-light">This platform allows you to develop SysAdmin skills</li>
+                    <li class="list-group-item list-group-item-light">Develop your SysAdmin skills</li>
                     <li class="list-group-item list-group-item-light">Complete the tasks presented in chapters on your linux machine</li>
-                    <li class="list-group-item list-group-item-light">Connect to the ISTL Linux machine by executing <b>./start.sh</b> script</li>
+{#                    <li class="list-group-item list-group-item-light">Connect to the ISTL Linux machine by executing <b>./start.sh</b> script</li>#}
                     <li class="list-group-item list-group-item-light">To revert the contents of your <b>home</b> folder to factory settings <a href="#">press here</a></li>
                 </ul>
             </div>

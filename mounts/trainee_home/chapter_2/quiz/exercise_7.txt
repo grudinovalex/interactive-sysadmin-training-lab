@@ -1,0 +1,4 @@
+ - Compare compressed files
+ - Output a string repeatedly until killed
+ - Tell how long the system has been running
+ - Find the process ID of a running program

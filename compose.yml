@@ -40,3 +40,15 @@ services:
       - 22
     ports:
       - 2223:22
+      
+  wetty:
+    image: ubuntu_wetty:latest
+    hostname: wetty
+    container_name: wetty
+    restart: always
+    expose:
+      - 3000
+      - 22
+    ports:
+      - 3000:3000
+      - 2224:22    

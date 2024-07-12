@@ -229,3 +229,489 @@ ll
 cd tarantino/
 ll
 rm alien the_thing 
+clear
+ll
+cd chapter_1/
+ll
+ll Movies/
+ll
+cd Movies/tarantino/
+ll
+cd ..
+ll
+cd ..
+ll
+cd ..
+ll
+ll /mnt/host/original_home/
+cd /mnt/host/original_home/
+ll
+cd ..
+ll
+mkdir chapter_1_orig
+cp -r original_home/* chapter_1_orig/
+ll chapter_1_orig/
+ll
+clear
+ll
+rm -r original_home/
+ll
+mkdir original_home
+cp -r chapter_1_orig/ original_home/
+ll original_home/
+clear
+ll
+cd chapter_1_orig/
+ll
+ll Movies/
+cd Files/
+ll
+mv the_thing thing
+ll
+mv the_hateful_eight the_hateful_seven
+ll
+clear
+ll
+cd ..
+ll
+cd
+ll
+clear
+ll
+cd chapter_1/
+ll
+ll Files/
+ls -l
+ll
+cd ..
+ll
+cd chapter_1/
+ll
+rm -r *
+ll
+cp -r /mnt/host/chapter_1_orig/* .
+ll
+clear
+touch my_first_file
+ll
+mkdir tarantino
+cd tarantino/
+touch pulp_fiction
+touch kill_bill_1 kill_bill_2
+ll
+cd ..
+ll
+ll Movies/
+ll Files/
+mv Files/* tarantino/
+cp -r tarantino/ Movies/
+ll
+rm -r tarantino/
+cd Movies/
+clear
+ll
+cd tarantino/
+ll
+rm -r thing alien 
+ll
+ll /mnt/host/chapter_1_orig/
+cd /mnt/host/chapter_1_orig/
+ll
+cd Files/
+ll
+mv thing the_thing
+cd
+ll
+cd chapter_1/
+clear
+ll
+cd Movies/
+ll
+cd tarantino/
+ll
+mv the_hateful_seven the_hateful_eight
+mv the_hateful_eight the_hateful_seven
+ll
+touch alien
+rm alien 
+mv the_hateful_seven the_hateful_eight
+ll
+cd ..
+ll
+cd ..
+ll
+cd Files/
+clear
+touch file{00..50}
+ll
+pwd
+ll
+rm file50 
+touch file50
+rm file50 
+touch file50
+ll
+cd ..
+ll
+cd ..
+ll
+ll /mnt/host/
+ll /mnt/host/chapter_1_orig/
+ll /mnt/host/chapter_1_orig/Movies/
+ll /mnt/host/chapter_1_orig/Files/
+ll
+cd chapter_1/
+ll
+cd Files/
+ll
+rm file50 
+touch file50 
+clear
+ll
+cd ..
+clear
+ll
+cd ..
+ll
+clear
+mkdir chapter_2
+cd chapter_
+cd chapter_2/
+clear
+ll
+nano
+sudo yum install nano
+nano file
+ll
+cat file 
+vim file 
+man vim
+vim _3 file 
+vim +3 file 
+vim +4 file 
+ll
+clear
+rm file 
+ll
+cp /mnt/host/linux_online/fruits .
+cp /mnt/host/linux_online/fruits.txt .
+ll
+clear
+ll
+vim fruits.txt 
+help ls
+ls help
+man pwd
+man exit
+exit --help
+exit -h
+clear
+ll
+cd chapter_2/
+clear
+ll
+cat fruits.txt 
+vim fruits.txt 
+cat fruits.txt 
+vim fruits.txt 
+ll
+cd
+la
+ls -la
+mkdir .vim
+cd .vim
+ll
+cd ..
+ll
+rm -r .vim
+mkdir -p ~/.vim ~/.vim/autoload ~/.vim/backup ~/.vim/colors ~/.vim/plugged
+touch ~/.vimrc
+vim .vimrc 
+ls -la
+cat .viminfo 
+clear
+vim .vimrc 
+ll
+cd chapter_2/
+clear
+ll
+vim fruits.txt 
+cd
+ll
+vim .vimrc 
+vim .vim
+ll
+vim .vimrc 
+vim .vim
+vim .vimrc 
+vim file
+cat file 
+vim file 
+vim .vimrc 
+vim file 
+vim .vimrc 
+vim .vim
+vim .vimrc 
+clear
+ll
+cat .vimrc 
+clear
+ll
+rm file 
+cd chapter_
+cd chapter_2/
+clear
+ll
+vim fruits.txt 
+ll
+tr -dc "A-Za-z 0-9" < /dev/urandom | fold -w100|head -n 100000 > bigfile.txt
+ll
+vim bigfile.txt 
+cat bigfile.txt 
+grep white_rabbit bigfile.txt 
+tr -dc "A-Za-z 0-9" < /dev/urandom | fold -w20|head -n 100000 > bigfile.txt
+clear
+vim bigfile.txt 
+ll
+mv bigfile.txt long.txt
+vim countries.txt
+clear
+ll
+vim countries.txt 
+vim long.txt 
+ll
+vim countries.txt 
+vim long.txt 
+cd
+ll
+vim .vimrc 
+cd chapter_
+cd chapter_2/
+clear
+ll
+vim long.txt 
+cd ..
+ll
+cd ..
+ll
+ll .vimrc
+cd trainee/
+ll .vimrc 
+mv .vimrc .bla
+cd chapter_2/
+ll
+vim long.txt 
+rpm -qa
+clear
+rpm -qa | wc -l
+ll
+grep rabbit long.txt 
+grep -c rabbit long.txt 
+grep -l rabbit long.txt 
+grep -h
+grep --h
+ll
+grep -n rabbit long.txt 
+whatis ls
+man --whatis ls
+apropos copy files
+apropos 'copy files'
+clear
+apropos 'copy files'
+whatis apropos
+tldr
+apropos "working directory"
+apropos "symbolic link"
+clear
+whatis ls
+whatis whatis
+mkdir quiz
+ll
+cd quiz/
+ll
+exercise_7.txt
+touch exercise_7.txt
+whatis pwd
+ll /usr/bin/
+whatis wait
+whatis uptime
+whatis uptime > exercise_7.txt 
+whatis zdiff >> exercise_7.txt 
+whatis yes
+whatis yes >> exercise_7.txt 
+cat exercise_7.txt 
+apropos running
+clear
+apropos running
+whatis pidof 
+whatis pidof >> exercise_7.txt 
+vim exercise_7.txt 
+cat exercise_7.txt 
+clear
+vim exercise_7.txt 
+grep + exercise_7.txt 
+vim exercise_7.txt 
+ll
+ll /usr/bin/
+whatis xxd
+apropos 'make a hex dump'
+ll /usr/bin/ | user
+ll /usr/bin/ | grep user
+whatis useradd
+apropos 'create a new user'
+whatis chmod
+whatis chmown
+whatis chown
+whatis wc
+ll
+where chown
+which chown
+whatis which
+man ls
+clear
+ll
+cd ..
+clear
+ll
+ll -a
+touch .secret_password
+clear
+ll
+ls -a
+cat .secret_password 
+echo "green caterpillar" > .secret_password 
+cat .secret_password 
+man ls
+who
+whoami
+man whoami
+uptime
+man uptime
+uptime -p
+clear
+uptime
+uptime -p
+man uptime
+man ls 
+man 
+man ls
+man uptime
+time
+whatis time
+man cat
+neofetch 
+man cat
+whatis string
+ll /usr/bin/
+ll /usr/bin/xrdb 
+cat /usr/bin/xrdb 
+string /usr/bin/xrdb 
+whatis string
+man string
+whatis strings
+whereis strings
+yum install strings
+sudo yum install strings
+sudo yum install binutils
+whereis strings
+strings /usr/bin/xrdb 
+clear
+strings /usr/bin/gdbus
+clear
+ll
+cat /usr/bin/gdbus
+uptime
+ll
+cowsay hello
+rpm -qa
+clear
+ll
+cd chapter_
+cd chapter_2/
+ll
+vim long.txt 
+clear
+vim fruits.txt 
+neofetch 
+vim long.txt 
+clear
+ll
+su -
+ll
+cd chapter_2/
+clear
+ll
+vim long.txt 
+clear
+cd ..
+clear
+ll
+la
+ls -a
+clear
+ll -a
+mv .bla .vimrc
+vim .vimrc 
+cmatrix
+uptime
+ping server
+nslookup server
+whatis nslookup
+nslookup www.google.com
+uptime
+cat .ssh/known_hosts 
+uptie
+uptime
+ll
+su - 
+uptime
+ll
+tree
+sudo yum install cmatrix
+cmatrix
+uptime
+ll
+vim chapter_2/long.txt 
+uptime
+neofetch 
+yum install cmatrix
+sudo yum install cmatrix
+cmatrix
+yum install asciinema
+sudo yum install asciinema
+whereis asciinem
+whereis asciinema
+man asciinema
+w
+who
+whoami
+whatis whoami
+man whoami
+whoami --version
+uptime
+echo hello
+exit
+ll
+cd chapter_
+cd chapter_1/
+ll
+rm my_first_file 
+clear
+ll
+touch my_first_file
+cmatrix
+utpime
+uptime
+asdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+c
+echo hello world
+telnet towel.blinkenlights.nl
+cat .ssh/known_hosts 
+ping server
+ssh server
+clear
+neofetch 
+uptime
+whoami
+sudo yum -y install telnet
+telnet towel.blinkenlights.nl

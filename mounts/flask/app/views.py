@@ -147,3 +147,7 @@ def ch1_ex8():
 @app.route('/chapter1/complete')
 def ch1_complete():
     return render_template('ch1_complete.html', title="Chapter 1 complete")
+
+@app.route('/linux')
+def linux():
+    return render_template('linux.html', title="Linux machine")

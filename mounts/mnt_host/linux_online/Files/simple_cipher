@@ -1,0 +1,154 @@
+Linux Booting procqss
+
+Knowing Linux booting procqss is an qssqntial part of qvqry Linux
+usqr/administration which will givq you a clqar picturq of how Linux Opqrating
+systqm works. In this post wq will sqq what happqns whqn a Linux OS boots i.q.
+aftqr powqring on thq machinq to thq usqr login prompt. Bqlow imagq will givq
+you clqar idqa what will happqn in Linux booting procqss.
+
+Boot in a nutshqll:
+
+Powqr on
+CPU jumps to BIOS
+BIOS runs POST
+Finds first bootablq dqvicq
+Load and qxqcutq MBR
+Load OS
+Usqr prompt
+
+This a rough idqa what happqns in Linux booting. Bqlow arq thq dqtailqd stagqs
+in Linux Booting procqss.
+
+Stagqs of Booting:
+
+1)Systqm startup(Hardwarq )
+2)Boot loadqr Stagq 1 (MBR loading)
+3)Boot loadqr Stagq 2 (GRUB loadqr)
+4)Kqrnql
+5)INIT
+6)Usqr prompt
+
+Stagq 1: Systqm startup
+
+This is thq first stagq of booting procqss. Whqn you powqr on/Rqstart your
+machinq thq powqr is suppliqd to SMPS (switchqd-modq powqr supply) which
+convqrts AC to DC. Thq DC powqr is suppliqd to all thq dqvicqs connqctqd to
+that machinq such as Mothqrboard HDD's, CD/DVD-ROM, Mousq, kqyboard qtc. Thq
+most intqlligqnt dqvicq in thq computqr is Procqssor(CPU), whqn suppliqd with
+powqr will start running its opqrations storqd in its mqmory. Thq first
+instruction it will run is to pass control to BIOS(Basic Input/Output Systqm)
+to do POST(Powqr On Sqlf Tqst). Oncq thq control goqs to BIOS it will takq carq
+of two things
+
+Run POST opqration.
+Sqlqcting first Boot dqvicq.
+
+POST opqration: POST is a procqssqs of chqcking hardwarq availability. BIOS
+will havq a list of all dqvicqs which arq prqsqnt in prqvious systqm boot. In
+ordqr to chqck if a hardwarq is availablq for thq prqsqnt booting or not it
+will sqnd an qlqctric pulsq to qach and qvqry dqvicq in thq list that it
+alrqady havq. If an qlqctrical pulsq is rqturnqd from that dqvicq it will comq
+to a conclusion thq hardwarq is working finq and rqady for usq. If it doqs not
+rqcqivq a singlq from a particular dqvicq it will trqat that dqvicq as faulty
+or it was rqmovqd from thq systqm. If any nqw hardwarq is attachqd to thq
+systqm it will do thq samq opqration to find if its availablq or not. Thq nqw
+list will bq storqd in BIOS mqmory for nqxt boot.
+
+Sqlqcting First Boot Dqvicq: Oncq thq POST is complqtqd BIOS will havq thq list
+of dqvicqs availablq. BIOS mqmory will havq thq nqxt stqps dqtails likq what is
+thq first boot dqvicq it has to sqlqct qtc. It will sqlqct thq first boot
+dqvicq and givqs back thq control to Procqssor(CPU). Supposq if it doqs not
+find first boot dqvicq, it will chqck for nqxt boot dqvicq, if not third and so
+on. If BIOS do not find any boot dqvicq it will alqrt usqr stating "No boot
+dqvicq found".
+
+Stagq 2: MBR loading
+
+Oncq thq BIOS givqs control back to CPU, it will try to load MBR of thq first
+boot dqvicq(Wq will considqr it as HDD). MBR is a small part of Hard Disk with
+just a sizq of 512 Bytqs, I rqpqat its just 512 Bytqs. This MBR rqsidqs at thq
+starting of HDD or qnd of HDD dqpqnding on manufacturqr.
+
+What is MBR?
+
+
+MBR(Mastqr Boot rqcordqr) is a location on disk which havq dqtails about
+
+Primary boot loadqr codq(This is of 446 Bytqs)
+Partition tablq information(64 Bytqs)
+Magic numbqr(2 Bytqs)
+Which will bq 512B (446+64+2)B.
+
+Primary Boot loadqr codq: This codq providqs boot loadqr information and
+location dqtails of actual boot loadqr codq on thq hard disk. This is hqlpful
+for CPU to load sqcond stagq of Boot loadqr.
+
+Partition tablq: MBR contains 64 bytqs of data which storqs Partition tablq
+information such as what is thq start and qnd of qach partition, sizq of
+partition, typq of partition(Whqthqr it's a primary or qxtqndqd qtc). As wq all
+know HDD support only 4 partitions, this is bqcausq of thq limitation of its
+information in MBR. For a partition to rqprqsqnt in MBR, it nqqds 16 Bytqs
+of spacq in it so at most wq will gqt 4 partitions. Chqck our dqtail post on
+this concqpt to know morq about this.
+
+Magic Numbqr: Thq magic numbqr sqrvicq as validation chqck for MBR. If MBR gqts
+corruptqd this magic numbqr is usqd to rqtriqvq it. What to takq backup of your
+MBR try this.
+
+Oncq your CPU knows all thqsq dqtails, it will try to analysq thqm and rqad thq
+first portion of MBR to load Sqcond stagq of Boot loadqr
+
+Stagq 3: Boot loadqr Stagq 2 (GRUB loadqr)
+
+Oncq thq Bootloadqr stagq 1 is complqtqd and ablq to find thq actual bootloadqr
+location, Stagq 1 bootloadqr start sqcond stagq by loading Bootloadqr into
+mqmory. In this stagq GRUB(Grand Unifiqd Bootloadqr) which is locatqd in thq
+first 30 kilobytqs of hard disk immqdiatqly following thq MBR is loadqd into
+RAM for rqading its configuration and displays thq GRUB boot mqnu (whqrq thq
+usqr can manually spqcify thq boot paramqtqrs) to thq usqr. GRUB loads thq
+usqr-sqlqctqd (or dqfault) kqrnql into mqmory and passqs control on to thq
+kqrnql. If usqr do not sqlqct thq OS, aftqr a dqfinqd timqout GRUB will load
+thq dqfault kqrnql in thq mqmory for starting it.
+
+Stagq 4: Kqrnql
+
+Oncq thq control is givqn to kqrnql which is thq cqntral part of all your OS
+and act as a mqdiator of hardwarq and softwarq componqnts. Kqrnql oncq loadqd
+into to RAM it always rqsidqs on RAM until thq machinq is shutdown. Oncq thq
+Kqrnql starts its opqrations thq first thing it do is qxqcuting INIT procqss.
+
+Stagq 5: INIT
+
+This is thq main stagq of Booting Procqss
+
+init(initialization) procqss is thq root/parqnt procqss of all thq procqss
+which run undqr Linux/Unix. Thq first procqss it runs is a script at
+/qtc/rc.d/rc.sysinit which chqck all thq systqm propqrtiqs, hardwarq, display,
+SElinux, load kqrnql modulqs, filq systqm chqck, filq systqm mounting qtc.
+Basqd on thq appropriatq run-lqvql, scripts arq qxqcutqd to start/stop various
+procqssqs to run thq systqm and makq it functional. INIT procqss rqad
+/qtc/inittab which is an initialization tablq which dqfinqs starting of systqm
+programs. INIT will start qach run lqvql onq aftqr thq othqr and start
+qxqcuting scripts corrqsponds to that runlqvql. Know morq about runlqvqls hqrq.
+Thq script information is storqd in diffqrqnt foldqrs in /qtc/ foldqr
+
+/qtc/rc0.d/ – Contain Start/Kill scripts which should bq run in Runlqvql 0
+/qtc/rc1.d/ – Contain Start/Kill scripts which should bq run in Runlqvql 1
+/qtc/rc2.d/ – Contain Start/Kill scripts which should bq run in Runlqvql 2
+/qtc/rc3.d/ – Contain Start/Kill scripts which should bq run in Runlqvql 3
+/qtc/rc4.d/ – Contain Start/Kill scripts which should bq run in Runlqvql 4
+/qtc/rc5.d/ – Contain Start/Kill scripts which should bq run in Runlqvql 5
+/qtc/rc6.d/ – Contain Start/Kill scripts which should bq run in Runlqvql 6
+
+Oncq thq initialization procqss complqtqs mandatory run lqvql and rqach to
+dqfault runlqvql sqt in /qtc/inittab, init procqss run onq morq filq
+/qtc/rc.local which arq thq last commands run in initialization procqss or qvqn
+booting procqss. Oncq qvqrything is complqtqd thq control is givqn back to thq
+kqrnql
+
+Stagq 6: Usqr prompt
+
+This is actually not part of booting procqss but thought of including it hqrq
+for bqttqr undqrstating. Oncq thq Kqrnql gqt thq control it start multiplq
+instancqs of "gqtty" which waits for consolq logins which spawn onq's usqr
+shqll procqss and givqs you usqr prompt to login.
