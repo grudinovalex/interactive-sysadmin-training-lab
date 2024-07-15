@@ -3,10 +3,12 @@
 {% block content %}
 
 <body>
-<h1>Chapter 1</h1>
+<h1>Chapter 2</h1>
 <hr class="default">
-<h3>2. Golden touch</h3>
-<h5>Change into the <b><i>'chapter_1'</i></b> directory and create a file called <b><i>'my_first_file'</i></b></h5>
+<h3>3. Adding fresh produce</h3>
+<h5>
+    Add more fruits to the <b>fruit bowl</b>, so that there are 10 fruits in total
+</h5>
 <p>.<br>.<br>.<br></p>
 <form action="#" method="post">
     <h5><input type="submit" value="Check" /></h5>
@@ -23,25 +25,28 @@
     <details>
     <summary>
     Show hint:
-    <span class="icon">👇</span>
+    <span class="icon">⬇️</span>
     </summary>
-    Use the command 'touch'.
+{#        <hr class="default">#}
+{#        --------------------------------------------<br>#}
+        The fruit_bowl.txt file needs to contain 10 lines with different fruits
     </details>
     </h6>
     {% endif %}
 {% endif %}
 
+
 {% if task == 'correct' %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch1_ex1') }}'"><--Previous</button>
-        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch1_ex3') }}'">Next--></button>
+        <button onclick="document.location='{{ url_for('ch2_ex2') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch1_complete') }}'">Next--></button>
     </p>
 {% else %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch1_ex1') }}'"><--Previous</button>
-        <button style="background-color:red; color:white" onclick="document.location='{{ url_for('ch1_ex3') }}' disabled">Next--></button>
+        <button onclick="document.location='{{ url_for('ch2_ex2') }}'"><--Previous</button>
+        <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
     </p>
 {% endif %}
 </body>

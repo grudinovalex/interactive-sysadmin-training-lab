@@ -1,0 +1,8 @@
+#!/bin/bash
+CODE=$(grep -c 'banana (spoiled)' /home/trainee/chapter_2/fruit_bowl.txt)
+
+if [ $CODE -eq 1 ]; then
+	echo "incorrect"
+else
+	echo "correct"
+fi

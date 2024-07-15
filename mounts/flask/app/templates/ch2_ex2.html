@@ -3,10 +3,12 @@
 {% block content %}
 
 <body>
-<h1>Chapter 1</h1>
+<h1>Chapter 2</h1>
 <hr class="default">
-<h3>2. Golden touch</h3>
-<h5>Change into the <b><i>'chapter_1'</i></b> directory and create a file called <b><i>'my_first_file'</i></b></h5>
+<h3>2. Getting rid of spoiled fruit</h3>
+<h5>
+    Remove the spoiled banana from the <b>fruit bowl</b>
+</h5>
 <p>.<br>.<br>.<br></p>
 <form action="#" method="post">
     <h5><input type="submit" value="Check" /></h5>
@@ -23,25 +25,28 @@
     <details>
     <summary>
     Show hint:
-    <span class="icon">👇</span>
+    <span class="icon">⬇️</span>
     </summary>
-    Use the command 'touch'.
+{#        <hr class="default">#}
+{#        --------------------------------------------<br>#}
+        Delete line number 6 which contains 'banana (spoiled)'<br>
     </details>
     </h6>
     {% endif %}
 {% endif %}
 
+
 {% if task == 'correct' %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch1_ex1') }}'"><--Previous</button>
-        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch1_ex3') }}'">Next--></button>
+        <button onclick="document.location='{{ url_for('ch2_ex1') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch2_ex3') }}'">Next--></button>
     </p>
 {% else %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch1_ex1') }}'"><--Previous</button>
-        <button style="background-color:red; color:white" onclick="document.location='{{ url_for('ch1_ex3') }}' disabled">Next--></button>
+        <button onclick="document.location='{{ url_for('ch2_ex1') }}'"><--Previous</button>
+        <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
     </p>
 {% endif %}
 </body>

@@ -3,5 +3,5 @@ pineapple
 Kiwi
 banana
 lemon
-banana
-citron
+banana (spoiled)
+pear

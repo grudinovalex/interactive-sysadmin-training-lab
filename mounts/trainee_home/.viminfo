@@ -17,20 +17,20 @@
 $
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1720794859,,"q"
 :wq
-|2,0,1720705582,,"wq"
+|2,0,1721054585,,"wq"
+:q!
+|2,0,1720968259,,"q!"
+:q
+|2,0,1720968258,,"q"
+:w
+|2,0,1720877721,,"w"
 :500
 |2,0,1720703871,,"500"
-:q!
-|2,0,1720702903,,"q!"
-:w
-|2,0,1720181519,,"w"
 
 # Search String History (newest to oldest):
 ?/white_rabbit
-|2,1,1720794856,47,"white_rabbit"
+|2,1,1720800607,47,"white_rabbit"
 ?/white_rab
 |2,1,1720704508,47,"white_rab"
 ?/white_rabb
@@ -61,14 +61,35 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
+"0	LINE	0
 	G WthHhL0g3tek06fq9W
 	MlOFcBY1f5y6e618QCKA
-|3,1,0,1,2,0,1720781780,"G WthHhL0g3tek06fq9W","MlOFcBY1f5y6e618QCKA"
-"1	LINE	0
-	uptime (1)           - Tell how long the system has been running.
-|3,0,1,1,1,0,1720705505,"uptime (1)           - Tell how long the system has been running."
+|3,0,0,1,2,0,1720781780,"G WthHhL0g3tek06fq9W","MlOFcBY1f5y6e618QCKA"
+""1	LINE	0
+	coconut
+|3,1,1,1,1,0,1721054583,"coconut"
 "2	LINE	0
+	banana (spoiled)
+|3,0,2,1,1,0,1720877787,"banana (spoiled)"
+"3	LINE	0
+	citron
+|3,0,3,1,1,0,1720877704,"citron"
+"4	LINE	0
+	banana (spoiled)
+|3,0,4,1,1,0,1720877642,"banana (spoiled)"
+"5	LINE	0
+	banana
+|3,0,5,1,1,0,1720876998,"banana"
+"6	LINE	0
+	orange
+|3,0,6,1,1,0,1720876376,"orange"
+"7	LINE	0
+	orange
+|3,0,7,1,1,0,1720875684,"orange"
+"8	LINE	0
+	uptime (1)           - Tell how long the system has been running.
+|3,0,8,1,1,0,1720705505,"uptime (1)           - Tell how long the system has been running."
+"9	LINE	0
 	Cambodia
 	Cameroon
 	Canada
@@ -119,278 +140,302 @@ $
 	India
 	Indonesia
 	Iran
-|3,0,2,1,50,0,1720703804,"Cambodia","Cameroon","Canada","Cape Verde","Central African Rep","Chad","Chile","China","Colombia","Comoros","Congo","Congo {Democratic Rep}","Costa Rica","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","East Timor","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada",>11
+|3,0,9,1,50,0,1720703804,"Cambodia","Cameroon","Canada","Cape Verde","Central African Rep","Chad","Chile","China","Colombia","Comoros","Congo","Congo {Democratic Rep}","Costa Rica","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","East Timor","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada",>11
 |<"Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran"
-"3	LINE	0
-	oragne
-|3,0,3,1,1,0,1720703363,"oragne"
-"4	LINE	0
-	
-|3,0,4,1,1,0,1720703186,""
-"5	LINE	0
-	" Set the commands to save in history default number is 20.
-|3,0,5,1,1,0,1720703185,"\" Set the commands to save in history default number is 20."
-"6	LINE	0
-	set history=1000
-|3,0,6,1,1,0,1720703184,"set history=1000"
-"7	LINE	0
-	
-|3,0,7,1,1,0,1720702990,""
-"8	LINE	0
-	set scrolloff=10
-|3,0,8,1,1,0,1720702990,"set scrolloff=10"
-"9	LINE	0
-	" Do not let cursor scroll below or above N number of lines when scrolling.
-|3,0,9,1,1,0,1720702989,"\" Do not let cursor scroll below or above N number of lines when scrolling."
 "-	CHAR	0
 	+
 |3,0,36,0,1,0,1720705580,"+"
 
 # File marks:
-'0  862  5  ~/chapter_2/long.txt
-|4,48,862,5,1720794859,"~/chapter_2/long.txt"
-'1  855  9  ~/chapter_2/long.txt
-|4,49,855,9,1720781791,"~/chapter_2/long.txt"
-'2  855  9  ~/chapter_2/long.txt
-|4,50,855,9,1720781791,"~/chapter_2/long.txt"
-'3  7  5  ~/chapter_2/fruits.txt
-|4,51,7,5,1720781764,"~/chapter_2/fruits.txt"
-'4  867  5  ~/chapter_2/long.txt
-|4,52,867,5,1720781742,"~/chapter_2/long.txt"
-'5  867  5  ~/chapter_2/long.txt
-|4,53,867,5,1720781742,"~/chapter_2/long.txt"
-'6  867  5  ~/chapter_2/long.txt
-|4,54,867,5,1720781742,"~/chapter_2/long.txt"
-'7  867  5  ~/chapter_2/long.txt
-|4,55,867,5,1720781742,"~/chapter_2/long.txt"
-'8  30  0  ~/.vimrc
-|4,56,30,0,1720781712,"~/.vimrc"
-'9  840  0  ~/chapter_2/long.txt
-|4,57,840,0,1720781636,"~/chapter_2/long.txt"
+'0  9  0  ~/chapter_2/fruit_bowl.txt
+|4,48,9,0,1721054585,"~/chapter_2/fruit_bowl.txt"
+'1  10  6  ~/chapter_2/fruit_bowl.txt
+|4,49,10,6,1721054574,"~/chapter_2/fruit_bowl.txt"
+'2  10  6  ~/chapter_2/fruit_bowl.txt
+|4,50,10,6,1721054574,"~/chapter_2/fruit_bowl.txt"
+'3  23  11  ~/something
+|4,51,23,11,1720968259,"~/something"
+'4  1  0  /mnt/host/chapter_2_orig/fruit_bowl.txt
+|4,52,1,0,1720877870,"/mnt/host/chapter_2_orig/fruit_bowl.txt"
+'5  6  0  ~/chapter_2/fruit_bowl.txt
+|4,53,6,0,1720877852,"~/chapter_2/fruit_bowl.txt"
+'6  6  0  ~/chapter_2/fruit_bowl.txt
+|4,54,6,0,1720877852,"~/chapter_2/fruit_bowl.txt"
+'7  6  0  ~/chapter_2/fruit_bowl.txt
+|4,55,6,0,1720877852,"~/chapter_2/fruit_bowl.txt"
+'8  6  0  ~/chapter_2/fruit_bowl.txt
+|4,56,6,0,1720877852,"~/chapter_2/fruit_bowl.txt"
+'9  6  0  ~/chapter_2/fruit_bowl.txt
+|4,57,6,0,1720877788,"~/chapter_2/fruit_bowl.txt"
 
 # Jumplist (newest first):
--'  862  5  ~/chapter_2/long.txt
-|4,39,862,5,1720794859,"~/chapter_2/long.txt"
--'  855  0  ~/chapter_2/long.txt
-|4,39,855,0,1720794856,"~/chapter_2/long.txt"
--'  855  9  ~/chapter_2/long.txt
-|4,39,855,9,1720781791,"~/chapter_2/long.txt"
--'  867  0  ~/chapter_2/long.txt
-|4,39,867,0,1720781779,"~/chapter_2/long.txt"
--'  867  0  ~/chapter_2/long.txt
-|4,39,867,0,1720781779,"~/chapter_2/long.txt"
--'  7  5  ~/chapter_2/fruits.txt
-|4,39,7,5,1720781764,"~/chapter_2/fruits.txt"
--'  7  5  ~/chapter_2/fruits.txt
-|4,39,7,5,1720781764,"~/chapter_2/fruits.txt"
--'  7  5  ~/chapter_2/fruits.txt
-|4,39,7,5,1720781764,"~/chapter_2/fruits.txt"
--'  7  5  ~/chapter_2/fruits.txt
-|4,39,7,5,1720781764,"~/chapter_2/fruits.txt"
--'  867  5  ~/chapter_2/long.txt
-|4,39,867,5,1720781742,"~/chapter_2/long.txt"
--'  867  5  ~/chapter_2/long.txt
-|4,39,867,5,1720781742,"~/chapter_2/long.txt"
--'  815  0  ~/chapter_2/long.txt
-|4,39,815,0,1720781740,"~/chapter_2/long.txt"
--'  815  0  ~/chapter_2/long.txt
-|4,39,815,0,1720781740,"~/chapter_2/long.txt"
--'  815  0  ~/chapter_2/long.txt
-|4,39,815,0,1720781740,"~/chapter_2/long.txt"
--'  815  0  ~/chapter_2/long.txt
-|4,39,815,0,1720781740,"~/chapter_2/long.txt"
--'  840  0  ~/chapter_2/long.txt
-|4,39,840,0,1720781729,"~/chapter_2/long.txt"
--'  840  0  ~/chapter_2/long.txt
-|4,39,840,0,1720781729,"~/chapter_2/long.txt"
--'  840  0  ~/chapter_2/long.txt
-|4,39,840,0,1720781729,"~/chapter_2/long.txt"
--'  840  0  ~/chapter_2/long.txt
-|4,39,840,0,1720781729,"~/chapter_2/long.txt"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  30  0  ~/.vimrc
-|4,39,30,0,1720781712,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  42  0  ~/.vimrc
-|4,39,42,0,1720781667,"~/.vimrc"
--'  840  0  ~/chapter_2/long.txt
-|4,39,840,0,1720781636,"~/chapter_2/long.txt"
--'  840  0  ~/chapter_2/long.txt
-|4,39,840,0,1720781636,"~/chapter_2/long.txt"
--'  840  0  ~/chapter_2/long.txt
-|4,39,840,0,1720781636,"~/chapter_2/long.txt"
--'  840  0  ~/chapter_2/long.txt
-|4,39,840,0,1720781636,"~/chapter_2/long.txt"
--'  867  5  ~/chapter_2/long.txt
-|4,39,867,5,1720781629,"~/chapter_2/long.txt"
--'  867  5  ~/chapter_2/long.txt
-|4,39,867,5,1720781629,"~/chapter_2/long.txt"
--'  867  5  ~/chapter_2/long.txt
-|4,39,867,5,1720781629,"~/chapter_2/long.txt"
--'  867  5  ~/chapter_2/long.txt
-|4,39,867,5,1720781629,"~/chapter_2/long.txt"
--'  867  5  ~/chapter_2/long.txt
-|4,39,867,5,1720781605,"~/chapter_2/long.txt"
--'  867  5  ~/chapter_2/long.txt
-|4,39,867,5,1720781605,"~/chapter_2/long.txt"
--'  867  5  ~/chapter_2/long.txt
-|4,39,867,5,1720781605,"~/chapter_2/long.txt"
--'  867  5  ~/chapter_2/long.txt
-|4,39,867,5,1720781605,"~/chapter_2/long.txt"
--'  898  19  ~/chapter_2/long.txt
-|4,39,898,19,1720781588,"~/chapter_2/long.txt"
--'  898  19  ~/chapter_2/long.txt
-|4,39,898,19,1720781588,"~/chapter_2/long.txt"
--'  898  19  ~/chapter_2/long.txt
-|4,39,898,19,1720781588,"~/chapter_2/long.txt"
--'  898  19  ~/chapter_2/long.txt
-|4,39,898,19,1720781588,"~/chapter_2/long.txt"
--'  898  19  ~/chapter_2/long.txt
-|4,39,898,19,1720781588,"~/chapter_2/long.txt"
--'  898  19  ~/chapter_2/long.txt
-|4,39,898,19,1720781588,"~/chapter_2/long.txt"
--'  898  19  ~/chapter_2/long.txt
-|4,39,898,19,1720781588,"~/chapter_2/long.txt"
--'  898  19  ~/chapter_2/long.txt
-|4,39,898,19,1720781588,"~/chapter_2/long.txt"
--'  898  19  ~/chapter_2/long.txt
-|4,39,898,19,1720781588,"~/chapter_2/long.txt"
--'  898  19  ~/chapter_2/long.txt
-|4,39,898,19,1720781588,"~/chapter_2/long.txt"
--'  898  19  ~/chapter_2/long.txt
-|4,39,898,19,1720781588,"~/chapter_2/long.txt"
--'  898  19  ~/chapter_2/long.txt
-|4,39,898,19,1720781588,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781581,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781581,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781581,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781581,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781581,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781581,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781581,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781581,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781581,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781581,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781581,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781581,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781577,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781577,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781577,"~/chapter_2/long.txt"
--'  897  0  ~/chapter_2/long.txt
-|4,39,897,0,1720781577,"~/chapter_2/long.txt"
--'  867  5  ~/chapter_2/long.txt
-|4,39,867,5,1720781567,"~/chapter_2/long.txt"
--'  867  5  ~/chapter_2/long.txt
-|4,39,867,5,1720781567,"~/chapter_2/long.txt"
--'  867  5  ~/chapter_2/long.txt
-|4,39,867,5,1720781567,"~/chapter_2/long.txt"
--'  867  5  ~/chapter_2/long.txt
-|4,39,867,5,1720781567,"~/chapter_2/long.txt"
--'  3  43  ~/chapter_2/quiz/exercise_7.txt
-|4,39,3,43,1720705582,"~/chapter_2/quiz/exercise_7.txt"
--'  3  43  ~/chapter_2/quiz/exercise_7.txt
-|4,39,3,43,1720705582,"~/chapter_2/quiz/exercise_7.txt"
--'  3  43  ~/chapter_2/quiz/exercise_7.txt
-|4,39,3,43,1720705582,"~/chapter_2/quiz/exercise_7.txt"
--'  3  43  ~/chapter_2/quiz/exercise_7.txt
-|4,39,3,43,1720705582,"~/chapter_2/quiz/exercise_7.txt"
--'  3  43  ~/chapter_2/quiz/exercise_7.txt
-|4,39,3,43,1720705582,"~/chapter_2/quiz/exercise_7.txt"
+-'  9  0  ~/chapter_2/fruit_bowl.txt
+|4,39,9,0,1721054585,"~/chapter_2/fruit_bowl.txt"
+-'  10  0  ~/chapter_2/fruit_bowl.txt
+|4,39,10,0,1721054583,"~/chapter_2/fruit_bowl.txt"
+-'  10  6  ~/chapter_2/fruit_bowl.txt
+|4,39,10,6,1721054574,"~/chapter_2/fruit_bowl.txt"
+-'  6  0  ~/chapter_2/fruit_bowl.txt
+|4,39,6,0,1721054535,"~/chapter_2/fruit_bowl.txt"
+-'  6  0  ~/chapter_2/fruit_bowl.txt
+|4,39,6,0,1721054535,"~/chapter_2/fruit_bowl.txt"
+-'  23  11  ~/something
+|4,39,23,11,1720968259,"~/something"
+-'  23  11  ~/something
+|4,39,23,11,1720968259,"~/something"
+-'  23  11  ~/something
+|4,39,23,11,1720968259,"~/something"
+-'  23  11  ~/something
+|4,39,23,11,1720968259,"~/something"
+-'  1  0  ~/something
+|4,39,1,0,1720968252,"~/something"
+-'  1  0  ~/something
+|4,39,1,0,1720968252,"~/something"
+-'  1  0  ~/something
+|4,39,1,0,1720968252,"~/something"
+-'  1  0  ~/something
+|4,39,1,0,1720968252,"~/something"
+-'  1  0  /mnt/host/chapter_2_orig/fruit_bowl.txt
+|4,39,1,0,1720877870,"/mnt/host/chapter_2_orig/fruit_bowl.txt"
+-'  1  0  /mnt/host/chapter_2_orig/fruit_bowl.txt
+|4,39,1,0,1720877870,"/mnt/host/chapter_2_orig/fruit_bowl.txt"
+-'  1  0  /mnt/host/chapter_2_orig/fruit_bowl.txt
+|4,39,1,0,1720877870,"/mnt/host/chapter_2_orig/fruit_bowl.txt"
+-'  1  0  /mnt/host/chapter_2_orig/fruit_bowl.txt
+|4,39,1,0,1720877870,"/mnt/host/chapter_2_orig/fruit_bowl.txt"
+-'  1  0  /mnt/host/chapter_2_orig/fruit_bowl.txt
+|4,39,1,0,1720877870,"/mnt/host/chapter_2_orig/fruit_bowl.txt"
+-'  1  0  /mnt/host/chapter_2_orig/fruit_bowl.txt
+|4,39,1,0,1720877870,"/mnt/host/chapter_2_orig/fruit_bowl.txt"
+-'  1  0  /mnt/host/chapter_2_orig/fruit_bowl.txt
+|4,39,1,0,1720877870,"/mnt/host/chapter_2_orig/fruit_bowl.txt"
+-'  1  0  /mnt/host/chapter_2_orig/fruit_bowl.txt
+|4,39,1,0,1720877870,"/mnt/host/chapter_2_orig/fruit_bowl.txt"
+-'  6  0  ~/chapter_2/fruit_bowl.txt
+|4,39,6,0,1720877852,"~/chapter_2/fruit_bowl.txt"
+-'  6  0  ~/chapter_2/fruit_bowl.txt
+|4,39,6,0,1720877852,"~/chapter_2/fruit_bowl.txt"
+-'  6  0  ~/chapter_2/fruit_bowl.txt
+|4,39,6,0,1720877852,"~/chapter_2/fruit_bowl.txt"
+-'  6  0  ~/chapter_2/fruit_bowl.txt
+|4,39,6,0,1720877852,"~/chapter_2/fruit_bowl.txt"
+-'  6  0  ~/chapter_2/fruit_bowl.txt
+|4,39,6,0,1720877788,"~/chapter_2/fruit_bowl.txt"
+-'  6  0  ~/chapter_2/fruit_bowl.txt
+|4,39,6,0,1720877788,"~/chapter_2/fruit_bowl.txt"
+-'  6  0  ~/chapter_2/fruit_bowl.txt
+|4,39,6,0,1720877788,"~/chapter_2/fruit_bowl.txt"
+-'  6  0  ~/chapter_2/fruit_bowl.txt
+|4,39,6,0,1720877788,"~/chapter_2/fruit_bowl.txt"
+-'  7  0  ~/chapter_2/fruit_bowl.txt
+|4,39,7,0,1720877785,"~/chapter_2/fruit_bowl.txt"
+-'  7  0  ~/chapter_2/fruit_bowl.txt
+|4,39,7,0,1720877785,"~/chapter_2/fruit_bowl.txt"
+-'  7  0  ~/chapter_2/fruit_bowl.txt
+|4,39,7,0,1720877785,"~/chapter_2/fruit_bowl.txt"
+-'  7  0  ~/chapter_2/fruit_bowl.txt
+|4,39,7,0,1720877785,"~/chapter_2/fruit_bowl.txt"
+-'  7  0  ~/chapter_2/fruit_bowl.txt
+|4,39,7,0,1720877785,"~/chapter_2/fruit_bowl.txt"
+-'  7  0  ~/chapter_2/fruit_bowl.txt
+|4,39,7,0,1720877785,"~/chapter_2/fruit_bowl.txt"
+-'  7  0  ~/chapter_2/fruit_bowl.txt
+|4,39,7,0,1720877785,"~/chapter_2/fruit_bowl.txt"
+-'  7  0  ~/chapter_2/fruit_bowl.txt
+|4,39,7,0,1720877785,"~/chapter_2/fruit_bowl.txt"
+-'  7  0  ~/chapter_2/fruit_bowl.txt
+|4,39,7,0,1720877785,"~/chapter_2/fruit_bowl.txt"
+-'  7  0  ~/chapter_2/fruit_bowl.txt
+|4,39,7,0,1720877785,"~/chapter_2/fruit_bowl.txt"
+-'  8  5  ~/chapter_2/fruit_bowl.txt
+|4,39,8,5,1720877780,"~/chapter_2/fruit_bowl.txt"
+-'  11  5  ~/chapter_2/fruit_bowl.txt
+|4,39,11,5,1720877780,"~/chapter_2/fruit_bowl.txt"
+-'  8  5  ~/chapter_2/fruit_bowl.txt
+|4,39,8,5,1720877780,"~/chapter_2/fruit_bowl.txt"
+-'  8  5  ~/chapter_2/fruit_bowl.txt
+|4,39,8,5,1720877780,"~/chapter_2/fruit_bowl.txt"
+-'  8  5  ~/chapter_2/fruit_bowl.txt
+|4,39,8,5,1720877780,"~/chapter_2/fruit_bowl.txt"
+-'  8  5  ~/chapter_2/fruit_bowl.txt
+|4,39,8,5,1720877780,"~/chapter_2/fruit_bowl.txt"
+-'  8  5  ~/chapter_2/fruit_bowl.txt
+|4,39,8,5,1720877780,"~/chapter_2/fruit_bowl.txt"
+-'  8  5  ~/chapter_2/fruit_bowl.txt
+|4,39,8,5,1720877780,"~/chapter_2/fruit_bowl.txt"
+-'  8  5  ~/chapter_2/fruit_bowl.txt
+|4,39,8,5,1720877780,"~/chapter_2/fruit_bowl.txt"
+-'  8  5  ~/chapter_2/fruit_bowl.txt
+|4,39,8,5,1720877780,"~/chapter_2/fruit_bowl.txt"
+-'  6  0  ~/chapter_2/fruit_bowl.txt
+|4,39,6,0,1720877771,"~/chapter_2/fruit_bowl.txt"
+-'  6  0  ~/chapter_2/fruit_bowl.txt
+|4,39,6,0,1720877771,"~/chapter_2/fruit_bowl.txt"
+-'  6  0  ~/chapter_2/fruit_bowl.txt
+|4,39,6,0,1720877771,"~/chapter_2/fruit_bowl.txt"
+-'  6  0  ~/chapter_2/fruit_bowl.txt
+|4,39,6,0,1720877771,"~/chapter_2/fruit_bowl.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
+-'  6  14  /mnt/host/chapter_2_orig/fruits.txt
+|4,39,6,14,1720877730,"/mnt/host/chapter_2_orig/fruits.txt"
 
 # History of marks within files (newest to oldest):
 
-> ~/chapter_2/long.txt
-	*	1720794859	0
-	"	862	5
-	^	867	19
-	.	867	20
-	+	867	20
+> ~/chapter_2/fruit_bowl.txt
+	*	1721054583	0
+	"	9	0
+	.	10	0
+	+	6	14
+	+	11	0
+	+	6	0
+	+	6	14
+	+	7	5
+	+	6	0
+	+	10	0
+
+> ~/something
+	*	1720968258	0
+	"	23	11
+	^	23	12
+	.	23	11
+	+	23	11
+
+> /mnt/host/chapter_2_orig/fruit_bowl.txt
+	*	1720877863	0
+	"	1	0
+
+> /mnt/host/chapter_2_orig/fruits.txt
+	*	1720877729	0
+	"	6	14
+	^	6	15
+	.	6	14
+	+	8	0
+	+	7	3
+	+	6	14
 
 > ~/chapter_2/fruits.txt
-	*	1720781748	0
-	"	7	5
-	.	8	0
+	*	1720876495	0
+	"	8	5
+	^	8	6
+	.	8	5
 	+	3	4
 	+	3	8
 	+	4	5
 	+	5	4
 	+	6	5
-	+	8	5
+	+	9	5
 	+	1	0
-	+	8	0
+	+	9	0
+	+	7	4
+	+	9	0
+	+	8	5
+
+> ~/chapter_2/countries.txt
+	*	1720868447	0
+	"	137	7
+	^	137	8
+	.	137	7
+	+	198	0
+	+	29	0
+	+	137	7
+
+> ~/chapter_2/long.txt
+	*	1720802316	0
+	"	916	0
+	^	867	19
+	.	867	20
+	+	867	20
 
 > ~/.vimrc
 	*	1720781673	0
@@ -432,13 +477,6 @@ $
 	+	3	3
 	+	4	3
 	+	3	44
-
-> ~/chapter_2/countries.txt
-	*	1720704128	0
-	"	158	0
-	.	29	0
-	+	197	0
-	+	29	0
 
 > ~/chapter_2/bigfile.txt
 	*	1720703579	0

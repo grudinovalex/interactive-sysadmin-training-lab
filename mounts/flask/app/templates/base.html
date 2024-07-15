@@ -28,14 +28,15 @@
             <div class="collapse navbar-collapse" id="navbarToggle">
                 <div class="navbar-nav me-auto">
                     <a class="nav-item nav-link" href="{{ url_for('index') }}">Home</a>
-                    <a class="nav-item nav-link" href="http://localhost:3000/wetty" target="_blank">Linux Machine</a>
+{#                    <a class="nav-item nav-link" href="http://localhost:3000/wetty" target="_blank">Linux Machine</a>#}
+                    <a class="nav-item nav-link" href="{{ url_for('linux') }}" target="_blank">Linux Machine</a>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Chapters
                       </a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="{{ url_for('ch1') }}">Chapter 1</a></li>
-                        <li><a class="dropdown-item" href="#">Level 2</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('ch2') }}">Chapter 2</a></li>
                         <li><a class="dropdown-item" href="#">Level 3</a></li>
                       </ul>
                     </li>
@@ -64,7 +65,7 @@
         </div>
         <div class="col-sm-3">
             <div class="content-section">
-                <h3>Interactive SysAdmin Training Lab</h3>
+                <h3>Basic info: </h3>
                 <p class='text-muted'>Project by Alexandr Grudinov for the 2024 Computer Science MSc programme</p>
                 <ul class="list-group">
                     <li class="list-group-item list-group-item-light">Develop your SysAdmin skills</li>

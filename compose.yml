@@ -42,7 +42,7 @@ services:
       - 2223:22
       
   wetty:
-    image: ubuntu_wetty:latest
+    image: wetty
     hostname: wetty
     container_name: wetty
     restart: always

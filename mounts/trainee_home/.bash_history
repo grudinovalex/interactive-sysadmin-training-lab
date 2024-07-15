@@ -715,3 +715,123 @@ uptime
 whoami
 sudo yum -y install telnet
 telnet towel.blinkenlights.nl
+echo hello world
+ll
+vim chapter_2/long.txt 
+exit
+neofetch 
+sudo yum install cmatrix
+cmatrix
+asdfasdf
+ffasdf
+uptime
+neofetch 
+cmatrix
+asdfasd
+clear
+ll
+cd chapter_2/
+clear
+ll
+cd ..
+cd chapter_1/
+ll
+rm my_first_file 
+cd chapter_1/
+clear
+ll
+touch my_first_file
+asdfasdf
+sadfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+echo hello world
+j
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+cowsay hello
+cmatrix
+adsfasdfasdf
+echo hello world
+ll
+cd chapter_
+cd chapter_1/
+ll
+pwd
+cd ..
+ll
+cd chapter_
+cd chapter_2/
+clear
+vim long.txt 
+window.wetty_term.resize(100, 70)
+uptime
+cmatrix
+asdff
+asdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+clear
+echo hello world
+neofetch 
+cmatrix
+\\
+clear
+cmatrix
+neofetch 
+ll
+vim chapter_2/long.txt 
+cmatrix
+vim chapter_2/long.txt 
+cmatrix
+resizepart 
+resizepart --help
+sudo yum install cmatrix
+cmatrix
+ll
+cd chapter_
+cd chapter_2/
+ll
+vim countries.txt 
+asdfeeadsf
+cmatrix
+clear
+ll
+cd chapter_1/
+ll
+cd Files/
+ll
+clear
+ll
+tree
+clear
+whoami
+cmatrix
+ll
+cmatrix
+htop
+htop
+neofetch 
+cmatrix
+uptime
+clear
+ll
+echo hello world
+vim chapter_2/fruits.txt 
+cd chapter_2/
+ll
+mv fruits.txt fruits_bowl.txt
+mv fruits_bowl.txt fruit_bowl.txt
+vim fruit_bowl.txt 
+echo 'banana' >> fruit_bowl.txt 
+vim fruit_bowl.txt 
+neo
+neofetch 
+uptime
+neofetch 
+sudo yum install cmatrix
+cmatrix
+neofetch 
+vim something
+history
+cd chapter_
+cd chapter_2/
+clear
+ll
+neofetch 

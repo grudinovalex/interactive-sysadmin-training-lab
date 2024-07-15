@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "$(tail -1 /home/trainee/chapter_2/fruit_bowl.txt)" == "orange" ]; then
+	echo "correct"
+else
+	echo "incorrect"
+fi
+
