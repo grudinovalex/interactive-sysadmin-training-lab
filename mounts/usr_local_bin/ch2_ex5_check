@@ -1,0 +1,8 @@
+#!/bin/bash
+CODE=$(grep -c 'Atlantis' /home/trainee/chapter_2/countries.txt)
+
+if [ $CODE -eq 0 ]; then
+	echo "correct"
+else
+	echo "incorrect"
+fi

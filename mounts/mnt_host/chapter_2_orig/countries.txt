@@ -134,7 +134,6 @@ Pakistan
 Palau
 Panama
 Papua New Guinea
-Atlantis
 Paraguay
 Peru
 Philippines
@@ -184,6 +183,7 @@ Tuvalu
 Uganda
 Ukraine
 United Arab Emirates
+Atlantis
 United Kingdom
 United States
 Uruguay
