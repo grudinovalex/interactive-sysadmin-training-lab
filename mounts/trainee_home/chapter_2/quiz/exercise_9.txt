@@ -1,0 +1,4 @@
+/usr/local/bin/nano
+/usr/bin/nano +
+/usr/local/sbin/nanoo
+/usr/sbin/nano

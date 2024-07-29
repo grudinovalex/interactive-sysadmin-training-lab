@@ -259,3 +259,37 @@ def ch2_ex8():
         return render_template('ch2_ex8.html', title="Chapter 2, Exercise 8", task=stdout, count=ch2ex8_count)
     else:
         return render_template('ch2_ex8.html', title="Chapter 2, Exercise 8")
+
+ch2ex9_count = 0
+@app.route('/chapter2/ex9', methods=['GET', 'POST'])
+def ch2_ex9():
+    if request.method == "POST":
+        stdout = cmd("ch2_ex9_check", "trainee")
+        global ch2ex9_count
+        ch2ex9_count += 1
+        if ch2ex9_count > 10:
+            ch2ex9_count = 0
+        return render_template('ch2_ex9.html', title="Chapter 2, Exercise 9", task=stdout, count=ch2ex9_count)
+    else:
+        return render_template('ch2_ex9.html', title="Chapter 2, Exercise 9")
+
+ch2ex10_count = 0
+@app.route('/chapter2/ex10', methods=['GET', 'POST'])
+def ch2_ex10():
+    if request.method == "POST":
+        stdout = cmd("ch2_ex10_check", "trainee")
+        global ch2ex10_count
+        ch2ex10_count += 1
+        if ch2ex10_count > 10:
+            ch2ex10_count = 0
+        return render_template('ch2_ex10.html', title="Chapter 2, Exercise 10", task=stdout, count=ch2ex10_count)
+    else:
+        return render_template('ch2_ex10.html', title="Chapter 2, Exercise 10")
+
+@app.route('/chapter2/complete')
+def ch2_complete():
+    return render_template('ch2_complete.html', title="Chapter 2 complete")
+
+@app.route('/chapter3')
+def ch3():
+    return render_template('ch3.html', title="Chapter 3")

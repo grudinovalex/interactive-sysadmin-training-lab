@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $(grep -c "/usr/bin/nano.*+" /home/trainee/chapter_2/quiz/exercise_9.txt) == "1" ]; then
+	echo "correct"
+else
+	echo "incorrect"
+fi

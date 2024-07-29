@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<body>
+<h1>Chapter 2</h1>
+<hr class="default">
+<h3>9. Finding nano</h3>
+<h5>
+    Each command on your system is a program which is stored in a specific directory<br>
+    Find the full path of the <b>'nano'</b> command by using the <b>'which'</b> command<br>
+    If unsure how to use the <b>'which'</b> command, run <b>'which -h'</b><br>
+    Append <i><b>'+'</b></i> at the end of the line with the correct full path in <i><b>quiz/exercise_9.txt</b></i><br>
+</h5>
+<p>.<br>.<br>.<br></p>
+<form action="#" method="post">
+    <h5><input type="submit" value="Check" /></h5>
+</form>
+
+{% if task == 'correct' %}
+    <p>.<br>.<br>.<br></p>
+    <h5 style="color:green; border: 2px solid Green"> TASK COMPLETE! Press 'Next' to continue </h5>
+{% elif task == 'incorrect' %}
+    <p>.<br>.<br>.<br></p>
+    <h5 style="color:red; border: 2px solid Red"> TASK FAILED! Try again </h5>
+    {% if count is defined and count >= 4 %}
+    <h6 style="color:darkslategray; border: 2px solid darkslategray">
+    <details>
+    <summary>
+    Show hint:
+    <span class="icon">⬇️</span>
+    </summary>
+{#        <hr class="default">#}
+{#        --------------------------------------------<br>#}
+        <b>which</b> shows the full path of (shell) commands<br>
+        Usage: <b>which [options] [--] COMMAND [...]</b>
+    </details>
+    </h6>
+    {% endif %}
+{% endif %}
+
+
+{% if task == 'correct' %}
+    <hr class="default">
+    <p style="text-align:center;">
+        <button onclick="document.location='{{ url_for('ch2_ex8') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch2_ex10') }}'">Next--></button>
+    </p>
+{% else %}
+    <hr class="default">
+    <p style="text-align:center;">
+        <button onclick="document.location='{{ url_for('ch2_ex8') }}'"><--Previous</button>
+        <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
+    </p>
+{% endif %}
+</body>
+
+
+{% endblock %}

@@ -1,91 +1,3 @@
-ll
-touch svine.txt
-ll
-cd /
-clear
-ll
-ll tmp/
-ll etc/
-clear
-ll
-ll boot/
-ll usr/
-ll proc/
-cat proc/uptime 
-clear
-uptim
-uptime
-clear
-ll
-ll dev/
-ll var/
-clear
-ll
-vim cow.txt 
-neofetch 
-whoami
-ls -l
-cd /
-ll
-hostnamectl 
-host
-clear
-cd
-ll
-pwd
-cat cow.txt 
-ll
-ll /tmp/
-w
-ps uax
-ps aux
-ps aux | grep root
-ps aux | grep trainee
-ll
-rm check1.sh 
-ll
-rm my_first_file 
-ll
-touch my_first_file
-ll
-whereis ping
-ping google.com
-neofetch 
-ll
-rm cow.txt 
-ll
-rm my_first_file 
-clear
-ll
-neofetch 
-yum search tux
-whereis ssh
-sudo dnf install iputils
-ping google.ocm
-ping google.com
-ping -c 4 google.com
-ping -c 4 google.com > file
-ll
-cat file 
-ll
-cat file 
-rm file 
-clear
-ll
-cowsay moo
-pwd
-pwd | tee
-ll
-whatis tee
-git clone https://github.com/ENGETO-Academy/Linux-public.git
-yum install git
-sudo yum install git
-git clone https://github.com/ENGETO-Academy/Linux-public.git
-ll
-ll Linux-public/
-rm -r Linux-public/
-wget https://engeto.com/files/Linux_online.zip
-sudo yum install wget
 wget https://engeto.com/files/Linux_online.zip
 ll
 unzip Linux_online.zip 
@@ -835,4 +747,254 @@ cd chapter_2/
 clear
 ll
 neofetch 
+cmatrix
+clear
+ll
+ll /mnt/host/
+cp -r chapter_2/ /mnt/host/chapter_2_orig
+cd chapter_2/
+clear
+ll
+cat countries.txt 
+cat fruits.txt 
+clear
+ll
+cat fruits.txt 
+echo "orange" >> fruits.txt 
+cat fruits.txt 
+tail fruits.txt 
+tail -1 fruits.txt 
+pwd
+vim fruits.txt 
+pwd
+vim fruit_bowl.txt 
+cat /mnt/host/chapter_2_orig/fruits.txt 
+vim /mnt/host/chapter_2_orig/fruits.txt 
+mv /mnt/host/chapter_2_orig/fruits.txt /mnt/host/chapter_2_orig/fruit_bowl.txt 
+ll
+rm fruit_bowl.txt 
+cp /mnt/host/chapter_2_orig/fruit_bowl.txt .
+ll
+cat fruit_bowl.txt 
+vim fruit_bowl.txt 
+cat /mnt/host/chapter_2_orig/fruit_bowl.txt 
+vi /mnt/host/chapter_2_orig/fruit_bowl.txt 
+ll
+vim fruit_bowl.txt 
+echo 'coco' >> fruit_bowl.txt 
+vim vegetables.txt
+ll
+vim countries.txt 
+cp countries.txt /mnt/host/chapter_2_orig/
+ll /mnt/host/chapter_2_orig/
+grep Atlantis /mnt/host/chapter_2_orig/countries.txt 
+grep -c Atlantis /mnt/host/chapter_2_orig/countries.txt 
+grep -l Atlantis /mnt/host/chapter_2_orig/countries.txt 
+grep -L Atlantis /mnt/host/chapter_2_orig/countries.txt 
+grep --help
+grep -n Atlantis /mnt/host/chapter_2_orig/countries.txt 
+grep -n Atlantis countries.txt 
+ll
+vim countries.txt 
+vim 17 countries.txt 
+vim -17 countries.txt 
+ll
+cat countries.txt 
+man vim
+vim +29 countries.txt 
+vim bla
+clear
+grep -n 'white_rabbit' long.txt 
+echo "867" > rabbit.txt
+cat rabbit.txt 
+vim rabbit.txt 
+ll
+cat rabbit.txt 
+vim rabbit.txt 
+cd quiz/
+ll
+clear
+ll
+cat exercise_7.txt 
+vim exercise_7.txt 
+cat exercise_7.txt 
+grep + exercise_7.txt 
+grep 'Tell how long the system has been running+' exercise_7.txt
+grep 'Tell how long the system has been running.*+' exercise_7.txt
+vim exercise_7.txt 
+grep 'Tell how long the system has been running.*+' exercise_7.txt
+vim exercise_7.txt 
+grep 'Tell how long the system has been running.*+' exercise_7.txt
+vim exercise_7.txt 
+grep 'Tell how long the system has been running.*+' exercise_7.txt
+$(grep 'Tell how long the system has been running.*+' exercise_7.txt)
+echo $(grep 'Tell how long the system has been running.*+' exercise_7.txt)
+ch2_ex7_check 
+clear
+ll
+pwd
+vim exercise_7.txt 
+ll
+cat exercise_7.txt 
+apropos -h
+ll
+clear
+ll
+touch exercise_8.txt 
+apropos 'change'
+echoh 'iopl' > exercise_8.txt 
+echo 'iopl' > exercise_8.txt 
+cat exercise_7.txt 
+echo 'choom' > exercise_8.txt 
+echo 'osage' > exercise_8.txt 
+echo 'chown' > exercise_8.txt 
+cat exercise_8.txt 
+echo 'choom' >> exercise_8.txt 
+echo 'osage' >> exercise_8.txt 
+cat exercise_
+cat exercise_8.txt 
+echo 'chage' >> exercise_8.txt 
+vim exercise_8.txt 
+apropos 'change ownership'
+apropos 'change ownership of a file'
+cat exercise_8.txt 
+apropos 'chage'
+ll
+vim exercise_8.txt 
+ll
+su 
+su -
+hostnamectl https://example.com/
+hostid https://example.com/
+ping https://example.com/
+ping example.com/
+ping example.com
+hostnamectl https://example.com/
+hostnamectlexample.com
+hostnamectl example.com
+apropos host
+apropos host | less
+
+apropos host | less
+host example.com
+neofetch 
+neofetch 
+which nano
+which pwd
+which host
+which vim
+which nano
+nano
+sudo yum install nano
+which nano
+echo $PATH
+which -h
+clear
+which -h | less
+which -h
+neofetch 
+ll
+whatis cmatrix-tty 
+whatis cmatrix
+cmatrix-tty 
+sudo yum install cmatrix
+cmatrix
+cmatrix
+asdfa
+asdf
+cmatrix
+uptime
+cmatrix
+whoami
+cd chapter_2/
+ll
+clear
+ll
+clear
+cmatrix
+dd if=/dev/urandom of=binaryfile.bin bs=1k count=1
+ll
+cat binaryfile.bin 
+dd if=/dev/urandom of=binaryfile.bin bs=10k count=1
+clear
+ll
+cat binaryfile.bin 
+cat binaryfile.bin | less
+clear
+ll
+string binaryfile.bin 
+sudo yum install strings
+whereis strings
+which strings
+sudo yum install binutils
+strings binaryfile.bin 
+clear
+dd if=/dev/zero of=binaryfile2.bin bs=10k count=1
+cat binaryfile2.bin 
+echo -n "HiddenMessage" | dd of=binaryfile2.bin bs=1 seek=100 conv=notrunc
+cat binaryfile2.bin 
+clear
+ll
+rm binaryfile2.bin 
+ll
+echo -n "ILovePenguins" | dd of=binaryfile.bin bs=1 seek=1000 conv=notrunc
+clear
+ll
+cat vbi
+cat binaryfile.bin 
+strings binaryfile.bin 
+clear
+ll
+cd chapter_2/
+ll
+clear
+ll
+cat binaryfile.bin 
+clear
+ll
+rm binaryfile.bin 
+clear
+ll
+cat rabbit.txt 
+cat long.txt 
+clear
+vim long.txt 
+ll
+rm rabbit.txt 
+clear
+ll
+cat vegetables.txt 
+ll
+rm vegetables.txt 
+clear
+ll
+cat fruit_bowl.txt 
+ll
+cd quiz/
+ll
+vim exercise_10.txt 
+man man
+man uptime
+cmatrix
+clear
+ll
+mkdir chaper_3
+ll
+mv chaper_3/ chapter_3
+cd chapter_3/
+clear
+ll
+which wget
+wget https://raw.githubusercontent.com/FinNLP/cities-list/master/list.txt
+ll
+cat list.txt 
+wc -l list.txt 
+vim list.txt 
+ls -l /etc
+ls -l /usr/bin/
+ls -l /usr/bin/ | wc 
+wc -l
+ls -l /usr/bin/ | wc -l
+ls -l /usr/bin/ | less
+ls -l /usr/bin/ | wc -l
 cmatrix
