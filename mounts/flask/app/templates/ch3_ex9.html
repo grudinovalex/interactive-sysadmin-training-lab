@@ -5,13 +5,11 @@
 <body>
 <h1>Chapter 3</h1>
 <hr class="default">
-<h3>5. Somebody ordered a plumber?</h3>
+<h3>9. Introduction Regular Expressions</h3>
 <h5>
-    In this exercise, you will try piping commands together by useing the <b>| (pipe)</b> symbol<br>
-    Usage: <code>command 1 | command 2 | command 3 ...</code><br>
-    Use the <b>tr</b>  command (stands for translate)<br>
-    Remember, read the hecking manual!<br>
-    Replace all the lowercase <b>'t'</b> letters to uppercase <b>'T'</b> in <b>cars.txt</b> and write the result into <b>TT.txt</b>
+    Use <b>grep</b> to find all the athletes whose surname starts with the letter <b>'J'</b><br>
+    Write the resulting list to a file called <b>j.txt</b><br>
+    You will need to use <a href="https://www.cyberciti.biz/faq/grep-regular-expressions/" target="_blank">regular expressions</a> to solve this exercise
 </h5>
 <p>.<br>.<br>.<br></p>
 <form action="#" method="post">
@@ -31,8 +29,8 @@
     Show hint:
     <span class="icon">⬇️</span>
     </summary>
-        How to use the <b>tr</b> command:<br>
-        <b>tr 'ORIGINAL LETTER' 'NEW LETTER'</b><br>
+        You can use ^ to force a regular expression to match only at the start line<br>
+        example usage: <code>grep "^tux" file.txt</code>
     </details>
     </h6>
     {% endif %}
@@ -42,13 +40,13 @@
 {% if task == 'correct' %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch3_ex4') }}'"><--Previous</button>
-        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch3_ex6') }}'">Next--></button>
+        <button onclick="document.location='{{ url_for('ch3_ex8') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch3_ex10') }}'">Next--></button>
     </p>
 {% else %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch3_ex4') }}'"><--Previous</button>
+        <button onclick="document.location='{{ url_for('ch3_ex8') }}'"><--Previous</button>
         <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
     </p>
 {% endif %}

@@ -5,13 +5,11 @@
 <body>
 <h1>Chapter 3</h1>
 <hr class="default">
-<h3>5. Somebody ordered a plumber?</h3>
+<h3>10. Getting your slice of the pie</h3>
 <h5>
-    In this exercise, you will try piping commands together by useing the <b>| (pipe)</b> symbol<br>
-    Usage: <code>command 1 | command 2 | command 3 ...</code><br>
-    Use the <b>tr</b>  command (stands for translate)<br>
-    Remember, read the hecking manual!<br>
-    Replace all the lowercase <b>'t'</b> letters to uppercase <b>'T'</b> in <b>cars.txt</b> and write the result into <b>TT.txt</b>
+    Use command <b>cut</b> to create a list of athlete full names and their gender (F or M)<br>
+    Read the manual if you get stuck<br>
+    Write the resulting list into a file called <b>full_names.txt</b>
 </h5>
 <p>.<br>.<br>.<br></p>
 <form action="#" method="post">
@@ -31,8 +29,11 @@
     Show hint:
     <span class="icon">⬇️</span>
     </summary>
-        How to use the <b>tr</b> command:<br>
-        <b>tr 'ORIGINAL LETTER' 'NEW LETTER'</b><br>
+        to complete this execise, you need to use the <b>cut</b> command with two options<br>
+        1. -d, --delimiter=DELIM   use DELIM instead of TAB for field delimiter<br>
+        delimiter is the character that acts the divider between the fields<br>
+        2. -f, --fields=LIST       select only these fields<br>
+        usage: <code>cut -d "DELIMITER" -f 1,2,3... </code>
     </details>
     </h6>
     {% endif %}
@@ -42,13 +43,13 @@
 {% if task == 'correct' %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch3_ex4') }}'"><--Previous</button>
-        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch3_ex6') }}'">Next--></button>
+        <button onclick="document.location='{{ url_for('ch3_ex9') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch3_complete') }}'">Next--></button>
     </p>
 {% else %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch3_ex4') }}'"><--Previous</button>
+        <button onclick="document.location='{{ url_for('ch3_ex9') }}'"><--Previous</button>
         <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
     </p>
 {% endif %}

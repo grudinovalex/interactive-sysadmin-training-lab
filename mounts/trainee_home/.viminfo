@@ -18,13 +18,13 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1722271018,,"wq"
+|2,0,1722347304,,"wq"
+:q
+|2,0,1722340584,,"q"
+:w
+|2,0,1722333050,,"w"
 :q!
 |2,0,1722270994,,"q!"
-:q
-|2,0,1722270992,,"q"
-:w
-|2,0,1721907794,,"w"
 :ww
 |2,0,1721907744,,"ww"
 :186
@@ -75,67 +75,201 @@ $
 	Tokyo
 |3,0,0,1,1,0,1721909778,"Tokyo"
 ""1	LINE	0
-	Bugatti
-|3,1,1,1,1,0,1722271016,"Bugatti"
+	JOHNSON Michael,F
+|3,1,1,1,1,0,1722347302,"JOHNSON Michael,F"
 "2	LINE	0
-	Bugatti
-|3,0,2,1,1,0,1722270991,"Bugatti"
+	MARTINEZ Ava,M
+|3,0,2,1,1,0,1722347301,"MARTINEZ Ava,M"
 "3	LINE	0
-	dGExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-|3,0,3,1,1,0,1721910217,"dGExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+	BROWN Ava,M
+|3,0,3,1,1,0,1722347301,"BROWN Ava,M"
 "4	LINE	0
-	chown
-|3,0,4,1,1,0,1721139210,"chown"
+	56 fencers.txt
+|3,0,4,1,1,0,1722340582,"56 fencers.txt"
 "5	LINE	0
-	Atlantis
-|3,0,5,1,1,0,1721058103,"Atlantis"
+	Bugatti
+|3,0,5,1,1,0,1722271016,"Bugatti"
 "6	LINE	0
-	Atlantis
-|3,0,6,1,1,0,1721057944,"Atlantis"
+	Bugatti
+|3,0,6,1,1,0,1722270991,"Bugatti"
 "7	LINE	0
-	Atlantis
-|3,0,7,1,1,0,1721056484,"Atlantis"
+	dGExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+|3,0,7,1,1,0,1721910217,"dGExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
 "8	LINE	0
-	coconut
-|3,0,8,1,1,0,1721054583,"coconut"
+	chown
+|3,0,8,1,1,0,1721139210,"chown"
 "9	LINE	0
-	banana (spoiled)
-|3,0,9,1,1,0,1720877787,"banana (spoiled)"
+	Atlantis
+|3,0,9,1,1,0,1721058103,"Atlantis"
 "-	CHAR	0
 	+
 |3,0,36,0,1,0,1721824241,"+"
 
 # File marks:
-'0  3  0  ~/chapter_3/cars.txt
-|4,48,3,0,1722271018,"~/chapter_3/cars.txt"
-'1  3  0  ~/chapter_3/cars.txt
-|4,49,3,0,1722270994,"~/chapter_3/cars.txt"
-'2  79102  0  ~/chapter_3/cities.txt
-|4,50,79102,0,1722252371,"~/chapter_3/cities.txt"
-'3  14  0  ~/chapter_3/part2.txt
-|4,51,14,0,1721910970,"~/chapter_3/part2.txt"
-'4  11  0  ~/chapter_3/content.txt
-|4,52,11,0,1721910221,"~/chapter_3/content.txt"
-'5  85  0  ~/chapter_3/towns.txt
-|4,53,85,0,1721909790,"~/chapter_3/towns.txt"
-'6  110  3  ~/chapter_3/towns.txt
-|4,54,110,3,1721909732,"~/chapter_3/towns.txt"
-'7  100  3  ~/chapter_3/towns.txt
-|4,55,100,3,1721909732,"~/chapter_3/towns.txt"
-'8  34  0  ~/chapter_3/sport.txt
-|4,56,34,0,1721908753,"~/chapter_3/sport.txt"
-'9  40  0  ~/chapter_3/newfile
-|4,57,40,0,1721908729,"~/chapter_3/newfile"
+'0  1  0  ~/chapter_3/full_names.txt
+|4,48,1,0,1722347304,"~/chapter_3/full_names.txt"
+'1  56  0  ~/chapter_3/fencers.txt
+|4,49,56,0,1722340585,"~/chapter_3/fencers.txt"
+'2  1  0  ~/chapter_3/count.txt
+|4,50,1,0,1722333128,"~/chapter_3/count.txt"
+'3  3  0  ~/chapter_3/cars.txt
+|4,51,3,0,1722271018,"~/chapter_3/cars.txt"
+'4  3  0  ~/chapter_3/cars.txt
+|4,52,3,0,1722270994,"~/chapter_3/cars.txt"
+'5  79102  0  ~/chapter_3/cities.txt
+|4,53,79102,0,1722252371,"~/chapter_3/cities.txt"
+'6  14  0  ~/chapter_3/part2.txt
+|4,54,14,0,1721910970,"~/chapter_3/part2.txt"
+'7  11  0  ~/chapter_3/content.txt
+|4,55,11,0,1721910221,"~/chapter_3/content.txt"
+'8  85  0  ~/chapter_3/towns.txt
+|4,56,85,0,1721909790,"~/chapter_3/towns.txt"
+'9  110  3  ~/chapter_3/towns.txt
+|4,57,110,3,1721909732,"~/chapter_3/towns.txt"
 
 # Jumplist (newest first):
+-'  1  0  ~/chapter_3/full_names.txt
+|4,39,1,0,1722347304,"~/chapter_3/full_names.txt"
+-'  56  0  ~/chapter_3/fencers.txt
+|4,39,56,0,1722340585,"~/chapter_3/fencers.txt"
+-'  56  0  ~/chapter_3/fencers.txt
+|4,39,56,0,1722340585,"~/chapter_3/fencers.txt"
+-'  10  0  ~/chapter_3/fencers.txt
+|4,39,10,0,1722340575,"~/chapter_3/fencers.txt"
+-'  10  0  ~/chapter_3/fencers.txt
+|4,39,10,0,1722340575,"~/chapter_3/fencers.txt"
+-'  1  0  ~/chapter_3/fencers.txt
+|4,39,1,0,1722340573,"~/chapter_3/fencers.txt"
+-'  1  0  ~/chapter_3/fencers.txt
+|4,39,1,0,1722340573,"~/chapter_3/fencers.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
 -'  3  0  ~/chapter_3/cars.txt
 |4,39,3,0,1722271018,"~/chapter_3/cars.txt"
+-'  3  0  ~/chapter_3/cars.txt
+|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
+-'  3  0  ~/chapter_3/cars.txt
+|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
+-'  3  0  ~/chapter_3/cars.txt
+|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
+-'  3  0  ~/chapter_3/cars.txt
+|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
+-'  3  0  ~/chapter_3/cars.txt
+|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
+-'  3  0  ~/chapter_3/cars.txt
+|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
+-'  3  0  ~/chapter_3/cars.txt
+|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
+-'  3  0  ~/chapter_3/cars.txt
+|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
+-'  3  0  ~/chapter_3/cars.txt
+|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
+-'  3  0  ~/chapter_3/cars.txt
+|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
+-'  3  0  ~/chapter_3/cars.txt
+|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
+-'  3  0  ~/chapter_3/cars.txt
+|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
+-'  3  0  ~/chapter_3/cars.txt
+|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
+-'  3  0  ~/chapter_3/cars.txt
+|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
 -'  3  0  ~/chapter_3/cars.txt
 |4,39,3,0,1722270994,"~/chapter_3/cars.txt"
 -'  1  0  ~/chapter_3/cars.txt
 |4,39,1,0,1722270990,"~/chapter_3/cars.txt"
 -'  1  0  ~/chapter_3/cars.txt
 |4,39,1,0,1722270990,"~/chapter_3/cars.txt"
+-'  1  0  ~/chapter_3/cars.txt
+|4,39,1,0,1722270990,"~/chapter_3/cars.txt"
+-'  1  0  ~/chapter_3/cars.txt
+|4,39,1,0,1722270990,"~/chapter_3/cars.txt"
+-'  1  0  ~/chapter_3/cars.txt
+|4,39,1,0,1722270990,"~/chapter_3/cars.txt"
+-'  1  0  ~/chapter_3/cars.txt
+|4,39,1,0,1722270990,"~/chapter_3/cars.txt"
+-'  1  0  ~/chapter_3/cars.txt
+|4,39,1,0,1722270990,"~/chapter_3/cars.txt"
+-'  1  0  ~/chapter_3/cars.txt
+|4,39,1,0,1722270990,"~/chapter_3/cars.txt"
+-'  1  0  ~/chapter_3/cars.txt
+|4,39,1,0,1722270990,"~/chapter_3/cars.txt"
+-'  1  0  ~/chapter_3/cars.txt
+|4,39,1,0,1722270990,"~/chapter_3/cars.txt"
+-'  1  0  ~/chapter_3/cars.txt
+|4,39,1,0,1722270990,"~/chapter_3/cars.txt"
+-'  1  0  ~/chapter_3/cars.txt
+|4,39,1,0,1722270990,"~/chapter_3/cars.txt"
+-'  1  0  ~/chapter_3/cars.txt
+|4,39,1,0,1722270990,"~/chapter_3/cars.txt"
+-'  1  0  ~/chapter_3/cars.txt
+|4,39,1,0,1722270990,"~/chapter_3/cars.txt"
+-'  1  0  ~/chapter_3/cars.txt
+|4,39,1,0,1722270990,"~/chapter_3/cars.txt"
+-'  1  0  ~/chapter_3/cars.txt
+|4,39,1,0,1722270990,"~/chapter_3/cars.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
+-'  79102  0  ~/chapter_3/cities.txt
+|4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
 -'  79102  0  ~/chapter_3/cities.txt
 |4,39,79102,0,1722252371,"~/chapter_3/cities.txt"
 -'  79102  0  ~/chapter_3/cities.txt
@@ -152,184 +286,68 @@ $
 |4,39,1,0,1722252365,"~/chapter_3/cities.txt"
 -'  1  0  ~/chapter_3/cities.txt
 |4,39,1,0,1722252365,"~/chapter_3/cities.txt"
--'  14  0  ~/chapter_3/part2.txt
-|4,39,14,0,1721910970,"~/chapter_3/part2.txt"
--'  14  0  ~/chapter_3/part2.txt
-|4,39,14,0,1721910970,"~/chapter_3/part2.txt"
--'  14  0  ~/chapter_3/part2.txt
-|4,39,14,0,1721910970,"~/chapter_3/part2.txt"
--'  14  0  ~/chapter_3/part2.txt
-|4,39,14,0,1721910970,"~/chapter_3/part2.txt"
--'  14  0  ~/chapter_3/part2.txt
-|4,39,14,0,1721910970,"~/chapter_3/part2.txt"
--'  14  0  ~/chapter_3/part2.txt
-|4,39,14,0,1721910970,"~/chapter_3/part2.txt"
--'  14  0  ~/chapter_3/part2.txt
-|4,39,14,0,1721910970,"~/chapter_3/part2.txt"
--'  14  0  ~/chapter_3/part2.txt
-|4,39,14,0,1721910970,"~/chapter_3/part2.txt"
--'  1  566  ~/chapter_3/part2.txt
-|4,39,1,566,1721910926,"~/chapter_3/part2.txt"
--'  1  566  ~/chapter_3/part2.txt
-|4,39,1,566,1721910926,"~/chapter_3/part2.txt"
--'  1  566  ~/chapter_3/part2.txt
-|4,39,1,566,1721910926,"~/chapter_3/part2.txt"
--'  1  566  ~/chapter_3/part2.txt
-|4,39,1,566,1721910926,"~/chapter_3/part2.txt"
--'  1  566  ~/chapter_3/part2.txt
-|4,39,1,566,1721910926,"~/chapter_3/part2.txt"
--'  1  566  ~/chapter_3/part2.txt
-|4,39,1,566,1721910926,"~/chapter_3/part2.txt"
--'  1  566  ~/chapter_3/part2.txt
-|4,39,1,566,1721910926,"~/chapter_3/part2.txt"
--'  1  566  ~/chapter_3/part2.txt
-|4,39,1,566,1721910926,"~/chapter_3/part2.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  11  0  ~/chapter_3/content.txt
-|4,39,11,0,1721910221,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  12  0  ~/chapter_3/content.txt
-|4,39,12,0,1721910217,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  1  322  ~/chapter_3/content.txt
-|4,39,1,322,1721910183,"~/chapter_3/content.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
--'  85  0  ~/chapter_3/towns.txt
-|4,39,85,0,1721909790,"~/chapter_3/towns.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
+-'  1  0  ~/chapter_3/cities.txt
+|4,39,1,0,1722252365,"~/chapter_3/cities.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/chapter_3/full_names.txt
+	*	1722347302	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/chapter_3/fencers.txt
+	*	1722340584	0
+	"	56	0
+	.	57	0
+	+	57	0
+
+> ~/chapter_3/count.txt
+	*	1722333050	0
+	"	1	0
+	.	1	0
+	+	1	0
 
 > ~/chapter_3/cars.txt
 	*	1722271016	0

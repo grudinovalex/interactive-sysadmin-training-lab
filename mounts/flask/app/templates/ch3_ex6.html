@@ -5,13 +5,13 @@
 <body>
 <h1>Chapter 3</h1>
 <hr class="default">
-<h3>5. Somebody ordered a plumber?</h3>
+<h3>6. Every city in the world</h3>
 <h5>
-    In this exercise, you will try piping commands together by useing the <b>| (pipe)</b> symbol<br>
-    Usage: <code>command 1 | command 2 | command 3 ...</code><br>
-    Use the <b>tr</b>  command (stands for translate)<br>
-    Remember, read the hecking manual!<br>
-    Replace all the lowercase <b>'t'</b> letters to uppercase <b>'T'</b> in <b>cars.txt</b> and write the result into <b>TT.txt</b>
+    There is a command used to count lines & letters in text files<br>
+    Find it by running <code>apropos counts</code><br>
+    Count the number of lines in the <b>cities_1.txt</b> file<br>
+    Write the # of lines into a file called <b>count.txt</b> by running:<br>
+    <code>echo "# of lines" > count.txt</code>
 </h5>
 <p>.<br>.<br>.<br></p>
 <form action="#" method="post">
@@ -31,8 +31,8 @@
     Show hint:
     <span class="icon">⬇️</span>
     </summary>
-        How to use the <b>tr</b> command:<br>
-        <b>tr 'ORIGINAL LETTER' 'NEW LETTER'</b><br>
+        Pass the name of the file as an argument to the <b>wc</b> command<br>
+        usage: <code>wc cities_1.txt</code>
     </details>
     </h6>
     {% endif %}
@@ -42,13 +42,13 @@
 {% if task == 'correct' %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch3_ex4') }}'"><--Previous</button>
-        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch3_ex6') }}'">Next--></button>
+        <button onclick="document.location='{{ url_for('ch3_ex5') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch3_ex7') }}'">Next--></button>
     </p>
 {% else %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch3_ex4') }}'"><--Previous</button>
+        <button onclick="document.location='{{ url_for('ch3_ex5') }}'"><--Previous</button>
         <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
     </p>
 {% endif %}
