@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<body>
+<h1>Chapter 3</h1>
+<hr class="default">
+<h3>5. Somebody ordered a plumber?</h3>
+<h5>
+    In this exercise, you will try piping commands together by useing the <b>| (pipe)</b> symbol<br>
+    Usage: <code>command 1 | command 2 | command 3 ...</code><br>
+    Use the <b>tr</b>  command (stands for translate)<br>
+    Remember, read the hecking manual!<br>
+    Replace all the lowercase <b>'t'</b> letters to uppercase <b>'T'</b> in <b>cars.txt</b> and write the result into <b>TT.txt</b>
+</h5>
+<p>.<br>.<br>.<br></p>
+<form action="#" method="post">
+    <h5><input type="submit" value="Check" /></h5>
+</form>
+
+{% if task == 'correct' %}
+    <p>.<br>.<br>.<br></p>
+    <h5 style="color:green; border: 2px solid Green"> TASK COMPLETE! Press 'Next' to continue </h5>
+{% elif task == 'incorrect' %}
+    <p>.<br>.<br>.<br></p>
+    <h5 style="color:red; border: 2px solid Red"> TASK FAILED! Try again </h5>
+    {% if count is defined and count >= 4 %}
+    <h6 style="color:darkslategray; border: 2px solid darkslategray">
+    <details>
+    <summary>
+    Show hint:
+    <span class="icon">⬇️</span>
+    </summary>
+        How to use the <b>tr</b> command:<br>
+        <b>tr 'ORIGINAL LETTER' 'NEW LETTER'</b><br>
+    </details>
+    </h6>
+    {% endif %}
+{% endif %}
+
+
+{% if task == 'correct' %}
+    <hr class="default">
+    <p style="text-align:center;">
+        <button onclick="document.location='{{ url_for('ch3_ex4') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch2_ex3') }}'">Next--></button>
+    </p>
+{% else %}
+    <hr class="default">
+    <p style="text-align:center;">
+        <button onclick="document.location='{{ url_for('ch3_ex4') }}'"><--Previous</button>
+        <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
+    </p>
+{% endif %}
+</body>
+
+
+{% endblock %}

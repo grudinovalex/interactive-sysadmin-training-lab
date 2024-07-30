@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<body>
+<h1>Chapter 3</h1>
+<hr class="default">
+<h3>3. Listing the system</h3>
+<h5>
+    Use the <b>ls -l</b> command to do a long listing of the <b>/sys</b> directory and write the output to a file called <i><b>sys.txt</b></i>
+</h5>
+<p>.<br>.<br>.<br></p>
+<form action="#" method="post">
+    <h5><input type="submit" value="Check" /></h5>
+</form>
+
+{% if task == 'correct' %}
+    <p>.<br>.<br>.<br></p>
+    <h5 style="color:green; border: 2px solid Green"> TASK COMPLETE! Press 'Next' to continue </h5>
+{% elif task == 'incorrect' %}
+    <p>.<br>.<br>.<br></p>
+    <h5 style="color:red; border: 2px solid Red"> TASK FAILED! Try again </h5>
+    {% if count is defined and count >= 4 %}
+    <h6 style="color:darkslategray; border: 2px solid darkslategray">
+    <details>
+    <summary>
+    Show hint:
+    <span class="icon">⬇️</span>
+    </summary>
+        By using the <b>'-l'</b> option with the <b>'ls'</b> command, it will give you a long detailed listing of the files in a particular directory</b><br>
+        <b>ls -l /tmp </b><br>
+    </details>
+    </h6>
+    {% endif %}
+{% endif %}
+
+
+{% if task == 'correct' %}
+    <hr class="default">
+    <p style="text-align:center;">
+        <button onclick="document.location='{{ url_for('ch3_ex2') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch3_ex4') }}'">Next--></button>
+    </p>
+{% else %}
+    <hr class="default">
+    <p style="text-align:center;">
+        <button onclick="document.location='{{ url_for('ch3_ex2') }}'"><--Previous</button>
+        <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
+    </p>
+{% endif %}
+</body>
+
+
+{% endblock %}

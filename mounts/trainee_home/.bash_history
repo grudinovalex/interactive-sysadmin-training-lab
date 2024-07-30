@@ -1,6 +1,3 @@
-wget https://engeto.com/files/Linux_online.zip
-ll
-unzip Linux_online.zip 
 sudo yum install unzip
 unzip Linux_online.zip 
 ll
@@ -997,4 +994,7 @@ wc -l
 ls -l /usr/bin/ | wc -l
 ls -l /usr/bin/ | less
 ls -l /usr/bin/ | wc -l
+cmatrix
+neofetch 
+ll
 cmatrix

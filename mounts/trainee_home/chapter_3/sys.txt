@@ -1,0 +1,10 @@
+total 0
+drwxr-xr-x  2 root root  0 Jul 25 12:51 block
+drwxr-xr-x 25 root root  0 Jul 25 12:51 bus
+drwxr-xr-x 29 root root  0 Jul 25 12:51 class
+drwxr-xr-x  4 root root  0 Jul 25 12:51 dev
+drwxr-xr-x 10 root root  0 Jul 25 12:51 devices
+drwxrwxrwt  2 root root 40 Jul 17 12:46 firmware
+drwxr-xr-x 13 root root  0 Jul 25 12:51 fs
+drwxr-xr-x 14 root root  0 Jul 25 12:51 kernel
+drwxr-xr-x 96 root root  0 Jul 25 12:51 module

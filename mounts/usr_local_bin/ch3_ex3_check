@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $(wc -l /home/trainee/chapter_3/sys.txt | cut -d ' ' -f 1) == "10"  ]; then
+	echo "correct"
+else
+	echo "incorrect"
+fi

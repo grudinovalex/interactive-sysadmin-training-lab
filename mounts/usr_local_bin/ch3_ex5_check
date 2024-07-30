@@ -1,0 +1,10 @@
+#!/bin/bash
+
+file1="/home/trainee/chapter_3/TT.txt"
+file2="/usr/local/bin/files/TT.txt"
+
+if cmp -s "$file1" "$file2"; then
+    echo "correct"
+else
+    echo "incorrect"
+fi
