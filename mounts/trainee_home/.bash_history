@@ -1,4 +1,3 @@
-sudo yum install unzip
 unzip Linux_online.zip 
 ll
 clear
@@ -998,3 +997,4 @@ cmatrix
 neofetch 
 ll
 cmatrix
+clear

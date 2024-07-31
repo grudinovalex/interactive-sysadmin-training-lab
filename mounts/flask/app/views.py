@@ -427,3 +427,46 @@ def ch3_ex10():
 @app.route('/chapter3/complete')
 def ch3_complete():
     return render_template('ch3_complete.html', title="Chapter 3 complete")
+
+@app.route('/chapter4')
+def ch4():
+    return render_template('ch4.html', title="Chapter 4")
+
+ch4ex1_count = 0
+@app.route('/chapter4/ex1', methods=['GET', 'POST'])
+def ch4_ex1():
+    if request.method == "POST":
+        stdout = cmd("ch4_ex1_check", "trainee")
+        global ch4ex1_count
+        ch4ex1_count += 1
+        if ch4ex1_count > 10:
+            ch4ex1_count = 0
+        return render_template('ch4_ex1.html', title="Chapter 4, Exercise 1", task=stdout, count=ch4ex1_count)
+    else:
+        return render_template('ch4_ex1.html', title="Chapter 4, Exercise 1")
+
+ch4ex2_count = 0
+@app.route('/chapter4/ex2', methods=['GET', 'POST'])
+def ch4_ex2():
+    if request.method == "POST":
+        stdout = cmd("ch4_ex2_check", "trainee")
+        global ch4ex2_count
+        ch4ex2_count += 1
+        if ch4ex2_count > 10:
+            ch4ex2_count = 0
+        return render_template('ch4_ex2.html', title="Chapter 4, Exercise 2", task=stdout, count=ch4ex2_count)
+    else:
+        return render_template('ch4_ex2.html', title="Chapter 4, Exercise 2")
+
+
+
+
+
+
+
+
+
+
+
+
+
