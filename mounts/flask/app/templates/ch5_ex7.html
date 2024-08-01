@@ -5,13 +5,13 @@
 <body>
 <h1>Chapter 5</h1>
 <hr class="default">
-<h3>6. You wouldn't download a car!</h3>
+<h3>7. Transferring files between your servers</h3>
 <h5>
-    Use <b>wget</b> command to download a file<br>
-    link to file: <br>
+    This exercise requires use of <a href="https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server" target="_blank">sftp</a><br>
+    Transfer the file <b>tux.pdf</b> for the remote <b>server</b> to your linux machine (in ~/chapter_5 directory)<br>
 </h5>
 <p>
-<code>https://old-releases.ubuntu.com/releases/warty/warty-release-install-powerpc.jigdo</code><br>
+
 <p>.<br>.<br>.<br></p>
 <form action="#" method="post">
     <h5><input type="submit" value="Check" /></h5>
@@ -30,8 +30,13 @@
     Show hint:
     <span class="icon">⬇️</span>
     </summary>
-        how to download a file with wget:<br>
-        <code>wget FILE_LINK</code>
+        how to use sftp:<br>
+        run command: <code>sftp USER@HOSTNAME</code><br>
+        this will establish a SFTP connection<br>
+        your prompt will change to an SFTP prompt<br>
+        you can then run the following file to transfer the file:<br>
+        <code>get FILE_NAME</code><br>
+        to exit SFTP connection, run <code>exit</code> command or press <b>CTRL + D</b>
     </details>
     </h6>
     {% endif %}
@@ -41,13 +46,13 @@
 {% if task == 'correct' %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch5_ex5') }}'"><--Previous</button>
-        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch5_ex7') }}'">Next--></button>
+        <button onclick="document.location='{{ url_for('ch5_ex6') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch5_complete') }}'">Next--></button>
     </p>
 {% else %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch5_ex5') }}'"><--Previous</button>
+        <button onclick="document.location='{{ url_for('ch5_ex6') }}'"><--Previous</button>
         <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
     </p>
 {% endif %}

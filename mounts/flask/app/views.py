@@ -622,3 +622,20 @@ def ch5_ex6():
         return render_template('ch5_ex6.html', title="Chapter 5, Exercise 6", task=stdout, count=ch5ex6_count)
     else:
         return render_template('ch5_ex6.html', title="Chapter 5, Exercise 6")
+
+ch5ex7_count = 0
+@app.route('/chapter5/ex7', methods=['GET', 'POST'])
+def ch5_ex7():
+    if request.method == "POST":
+        stdout = cmd("ch5_ex7_check", "trainee")
+        global ch5ex7_count
+        ch5ex7_count += 1
+        if ch5ex7_count > 10:
+            ch5ex7_count = 0
+        return render_template('ch5_ex7.html', title="Chapter 5, Exercise 7", task=stdout, count=ch5ex7_count)
+    else:
+        return render_template('ch5_ex7.html', title="Chapter 5, Exercise 7")
+
+@app.route('/chapter5/complete')
+def ch5_complete():
+    return render_template('ch5_complete.html', title="Chapter 5 complete")
