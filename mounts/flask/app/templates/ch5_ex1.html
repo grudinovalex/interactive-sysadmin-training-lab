@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<body>
+<h1>Chapter 5</h1>
+<hr class="default">
+<h3>1. Ping ping, who's there?</h3>
+<h5>
+    change to <b>~/chapter_5</b> directory<br>
+    there is a website <b>www.example.com</b><br>
+    use the command <b>ping</b> to check if it is alive<br>
+    stop the command by pressing <b>CTRL+C</b><br>
+    if the website is live, find out its <b>IP address</b> by using command <b>host</b><br>
+    write its <b>IP address</b> to a file called <b>example.txt</b>
+</h5>
+{#<p>#}
+{#    <b>background info:</b><br>#}
+{#    in order to do tasks such as creating users & accessing system files, you need to execute commands as root <a href="https://www.ssh.com/academy/pam/root-user-account#:~:text=The%20root%20user%20is%20the,highest%20level%20of%20permissions%20available." target="_blank">root</a><br>#}
+{#    this is done by writing <b>sudo</b> before the command that you want to execute<br>#}
+{#    root password is <b>'istl2024'</b>#}
+{#</p>#}
+<p>.<br>.<br>.<br></p>
+<form action="#" method="post">
+    <h5><input type="submit" value="Check" /></h5>
+</form>
+
+{% if task == 'correct' %}
+    <p>.<br>.<br>.<br></p>
+    <h5 style="color:green; border: 2px solid Green"> TASK COMPLETE! Press 'Next' to continue </h5>
+{% elif task == 'incorrect' %}
+    <p>.<br>.<br>.<br></p>
+    <h5 style="color:red; border: 2px solid Red"> TASK FAILED! Try again </h5>
+    {% if count is defined and count >= 4 %}
+    <h6 style="color:darkslategray; border: 2px solid darkslategray">
+    <details>
+    <summary>
+    Show hint:
+    <span class="icon">⬇️</span>
+    </summary>
+        how to use <b>ping</b>:<br>
+        <code>ping WEBSITE or ping IP ADDRESS</code><br>
+        how to use <b>host</b>:<br>
+        <code>host WEBSITE</code>
+    </details>
+    </h6>
+    {% endif %}
+{% endif %}
+
+
+{% if task == 'correct' %}
+    <hr class="default">
+    <p style="text-align:center;">
+        <button onclick="document.location='{{ url_for('ch5') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch5_ex2') }}'">Next--></button>
+    </p>
+{% else %}
+    <hr class="default">
+    <p style="text-align:center;">
+        <button onclick="document.location='{{ url_for('ch5') }}'"><--Previous</button>
+        <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
+    </p>
+{% endif %}
+</body>
+
+
+{% endblock %}

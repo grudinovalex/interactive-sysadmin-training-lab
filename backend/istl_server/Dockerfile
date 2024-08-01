@@ -16,13 +16,12 @@ RUN sed -i '/tsflags=nodocs/d' /etc/dnf/dnf.conf && \
 	echo 'istl2024' | passwd --stdin root && \
 	sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config && \
 	ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N '' && \
-	adduser trainee && \
-	echo 'istl2024' | passwd --stdin trainee && \
-	usermod -aG wheel trainee && \
-  mkdir /mnt/host
+  adduser admin &&\
+  echo 'tuxedo9999' | passwd --stdin admin && \
+  usermod -aG wheel admin 
 
 COPY my_banner_message /etc/motd.d
-COPY cow.txt /home/trainee
+COPY tux.pdf /home/admin
 
 EXPOSE 22
 

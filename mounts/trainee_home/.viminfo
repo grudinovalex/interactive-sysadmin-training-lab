@@ -17,14 +17,14 @@
 $
 
 # Command Line History (newest to oldest):
+:q!
+|2,0,1722524132,,"q!"
 :q
-|2,0,1722512421,,"q"
+|2,0,1722524130,,"q"
+:wq
+|2,0,1722524128,,"wq"
 :w
 |2,0,1722508342,,"w"
-:wq
-|2,0,1722347304,,"wq"
-:q!
-|2,0,1722270994,,"q!"
 :ww
 |2,0,1721907744,,"ww"
 :186
@@ -106,32 +106,42 @@ $
 |3,0,36,0,1,0,1721824241,"+"
 
 # File marks:
-'0  78  2  ~/index.html
-|4,48,78,2,1722512421,"~/index.html"
-'1  1  0  /etc/hosts
-|4,49,1,0,1722508343,"/etc/hosts"
-'2  1  0  ~/chapter_3/full_names.txt
-|4,50,1,0,1722347304,"~/chapter_3/full_names.txt"
-'3  56  0  ~/chapter_3/fencers.txt
-|4,51,56,0,1722340585,"~/chapter_3/fencers.txt"
-'4  1  0  ~/chapter_3/count.txt
-|4,52,1,0,1722333128,"~/chapter_3/count.txt"
-'5  3  0  ~/chapter_3/cars.txt
-|4,53,3,0,1722271018,"~/chapter_3/cars.txt"
-'6  3  0  ~/chapter_3/cars.txt
-|4,54,3,0,1722270994,"~/chapter_3/cars.txt"
-'7  79102  0  ~/chapter_3/cities.txt
-|4,55,79102,0,1722252371,"~/chapter_3/cities.txt"
-'8  14  0  ~/chapter_3/part2.txt
-|4,56,14,0,1721910970,"~/chapter_3/part2.txt"
-'9  11  0  ~/chapter_3/content.txt
-|4,57,11,0,1721910221,"~/chapter_3/content.txt"
+'0  8  16  /etc/hosts
+|4,48,8,16,1722524132,"/etc/hosts"
+'1  78  2  ~/index.html
+|4,49,78,2,1722512421,"~/index.html"
+'2  1  0  /etc/hosts
+|4,50,1,0,1722508343,"/etc/hosts"
+'3  1  0  /etc/hosts
+|4,51,1,0,1722508343,"/etc/hosts"
+'4  1  0  ~/chapter_3/full_names.txt
+|4,52,1,0,1722347304,"~/chapter_3/full_names.txt"
+'5  56  0  ~/chapter_3/fencers.txt
+|4,53,56,0,1722340585,"~/chapter_3/fencers.txt"
+'6  1  0  ~/chapter_3/count.txt
+|4,54,1,0,1722333128,"~/chapter_3/count.txt"
+'7  3  0  ~/chapter_3/cars.txt
+|4,55,3,0,1722271018,"~/chapter_3/cars.txt"
+'8  3  0  ~/chapter_3/cars.txt
+|4,56,3,0,1722270994,"~/chapter_3/cars.txt"
+'9  79102  0  ~/chapter_3/cities.txt
+|4,57,79102,0,1722252371,"~/chapter_3/cities.txt"
 
 # Jumplist (newest first):
+-'  8  16  /etc/hosts
+|4,39,8,16,1722524132,"/etc/hosts"
+-'  1  0  /etc/hosts
+|4,39,1,0,1722524118,"/etc/hosts"
+-'  78  2  ~/index.html
+|4,39,78,2,1722512421,"~/index.html"
 -'  78  2  ~/index.html
 |4,39,78,2,1722512421,"~/index.html"
 -'  76  0  ~/index.html
 |4,39,76,0,1722512420,"~/index.html"
+-'  76  0  ~/index.html
+|4,39,76,0,1722512420,"~/index.html"
+-'  1  0  ~/index.html
+|4,39,1,0,1722512412,"~/index.html"
 -'  1  0  ~/index.html
 |4,39,1,0,1722512412,"~/index.html"
 -'  1  0  /etc/hosts
@@ -146,6 +156,30 @@ $
 |4,39,1,0,1722347304,"~/chapter_3/full_names.txt"
 -'  1  0  ~/chapter_3/full_names.txt
 |4,39,1,0,1722347304,"~/chapter_3/full_names.txt"
+-'  1  0  ~/chapter_3/full_names.txt
+|4,39,1,0,1722347304,"~/chapter_3/full_names.txt"
+-'  1  0  ~/chapter_3/full_names.txt
+|4,39,1,0,1722347304,"~/chapter_3/full_names.txt"
+-'  1  0  ~/chapter_3/full_names.txt
+|4,39,1,0,1722347304,"~/chapter_3/full_names.txt"
+-'  1  0  ~/chapter_3/full_names.txt
+|4,39,1,0,1722347304,"~/chapter_3/full_names.txt"
+-'  56  0  ~/chapter_3/fencers.txt
+|4,39,56,0,1722340585,"~/chapter_3/fencers.txt"
+-'  56  0  ~/chapter_3/fencers.txt
+|4,39,56,0,1722340585,"~/chapter_3/fencers.txt"
+-'  56  0  ~/chapter_3/fencers.txt
+|4,39,56,0,1722340585,"~/chapter_3/fencers.txt"
+-'  56  0  ~/chapter_3/fencers.txt
+|4,39,56,0,1722340585,"~/chapter_3/fencers.txt"
+-'  56  0  ~/chapter_3/fencers.txt
+|4,39,56,0,1722340585,"~/chapter_3/fencers.txt"
+-'  56  0  ~/chapter_3/fencers.txt
+|4,39,56,0,1722340585,"~/chapter_3/fencers.txt"
+-'  56  0  ~/chapter_3/fencers.txt
+|4,39,56,0,1722340585,"~/chapter_3/fencers.txt"
+-'  56  0  ~/chapter_3/fencers.txt
+|4,39,56,0,1722340585,"~/chapter_3/fencers.txt"
 -'  56  0  ~/chapter_3/fencers.txt
 |4,39,56,0,1722340585,"~/chapter_3/fencers.txt"
 -'  56  0  ~/chapter_3/fencers.txt
@@ -178,6 +212,38 @@ $
 |4,39,10,0,1722340575,"~/chapter_3/fencers.txt"
 -'  10  0  ~/chapter_3/fencers.txt
 |4,39,10,0,1722340575,"~/chapter_3/fencers.txt"
+-'  10  0  ~/chapter_3/fencers.txt
+|4,39,10,0,1722340575,"~/chapter_3/fencers.txt"
+-'  10  0  ~/chapter_3/fencers.txt
+|4,39,10,0,1722340575,"~/chapter_3/fencers.txt"
+-'  10  0  ~/chapter_3/fencers.txt
+|4,39,10,0,1722340575,"~/chapter_3/fencers.txt"
+-'  10  0  ~/chapter_3/fencers.txt
+|4,39,10,0,1722340575,"~/chapter_3/fencers.txt"
+-'  10  0  ~/chapter_3/fencers.txt
+|4,39,10,0,1722340575,"~/chapter_3/fencers.txt"
+-'  10  0  ~/chapter_3/fencers.txt
+|4,39,10,0,1722340575,"~/chapter_3/fencers.txt"
+-'  10  0  ~/chapter_3/fencers.txt
+|4,39,10,0,1722340575,"~/chapter_3/fencers.txt"
+-'  10  0  ~/chapter_3/fencers.txt
+|4,39,10,0,1722340575,"~/chapter_3/fencers.txt"
+-'  1  0  ~/chapter_3/fencers.txt
+|4,39,1,0,1722340573,"~/chapter_3/fencers.txt"
+-'  1  0  ~/chapter_3/fencers.txt
+|4,39,1,0,1722340573,"~/chapter_3/fencers.txt"
+-'  1  0  ~/chapter_3/fencers.txt
+|4,39,1,0,1722340573,"~/chapter_3/fencers.txt"
+-'  1  0  ~/chapter_3/fencers.txt
+|4,39,1,0,1722340573,"~/chapter_3/fencers.txt"
+-'  1  0  ~/chapter_3/fencers.txt
+|4,39,1,0,1722340573,"~/chapter_3/fencers.txt"
+-'  1  0  ~/chapter_3/fencers.txt
+|4,39,1,0,1722340573,"~/chapter_3/fencers.txt"
+-'  1  0  ~/chapter_3/fencers.txt
+|4,39,1,0,1722340573,"~/chapter_3/fencers.txt"
+-'  1  0  ~/chapter_3/fencers.txt
+|4,39,1,0,1722340573,"~/chapter_3/fencers.txt"
 -'  1  0  ~/chapter_3/fencers.txt
 |4,39,1,0,1722340573,"~/chapter_3/fencers.txt"
 -'  1  0  ~/chapter_3/fencers.txt
@@ -226,118 +292,55 @@ $
 |4,39,1,0,1722333128,"~/chapter_3/count.txt"
 -'  1  0  ~/chapter_3/count.txt
 |4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
+-'  1  0  ~/chapter_3/count.txt
+|4,39,1,0,1722333128,"~/chapter_3/count.txt"
 -'  3  0  ~/chapter_3/cars.txt
 |4,39,3,0,1722271018,"~/chapter_3/cars.txt"
 -'  3  0  ~/chapter_3/cars.txt
 |4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722271018,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
--'  3  0  ~/chapter_3/cars.txt
-|4,39,3,0,1722270994,"~/chapter_3/cars.txt"
 
 # History of marks within files (newest to oldest):
+
+> /etc/hosts
+	*	1722524130	0
+	"	8	16
+	^	8	17
+	.	8	16
+	+	8	16
 
 > ~/index.html
 	*	1722512421	0
 	"	78	2
-
-> /etc/hosts
-	*	1722508342	0
-	"	1	0
 
 > ~/chapter_3/full_names.txt
 	*	1722347302	0

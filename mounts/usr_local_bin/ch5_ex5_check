@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ $(ssh admin@server -oBatchMode=yes -t 'echo -n 1' 2>/dev/null) == "1" ]; then
+	echo "correct"
+else
+	echo "incorrect"
+fi
+

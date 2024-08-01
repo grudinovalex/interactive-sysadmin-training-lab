@@ -1,6 +1,7 @@
 services:
   istl:
     image: istl_fedora:latest
+    build: ./backend/istl_instance
     hostname: istl
     container_name: istl
     restart: always
@@ -32,7 +33,8 @@ services:
         source: ./mounts/flask
         target: /flask
   istl_server:
-    image: istl_fedora:latest
+    image: istl_server:latest
+    build: ./backend/istl_server
     hostname: rmtlnx1000
     container_name: istl_server
     restart: always
@@ -40,6 +42,10 @@ services:
       - 22
     ports:
       - 2223:22
+    volumes:
+      - type: bind
+        source: ./mounts/remote_usr_local_bin
+        target: /usr/local/bin      
       
   wetty:
     image: wetty

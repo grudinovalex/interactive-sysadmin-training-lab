@@ -1,0 +1,9 @@
+#!/bin/bash
+CODE=$(ps aux | grep -c admin)
+
+if [ $CODE -eq 1 ]; then
+	echo "incorrect"
+else
+	echo "correct"
+fi
+

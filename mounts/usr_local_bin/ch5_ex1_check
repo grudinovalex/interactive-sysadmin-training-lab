@@ -1,0 +1,9 @@
+#!/bin/bash
+
+IP=$(host www.example.com | head -1 | cut -d " " -f 4)
+
+if [ $(grep -c ${IP} /home/trainee/chapter_5/example.txt) == "1" ]; then
+	echo "correct"
+else
+	echo "incorrect"
+fi

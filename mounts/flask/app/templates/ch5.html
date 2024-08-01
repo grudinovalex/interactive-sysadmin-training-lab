@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+<h1>Chapter 5</h1>
+<hr class="default">
+<h3>Exercises:</h3>
+<ol>
+    <li><a href="{{ url_for('ch5_ex1') }}">Ping ping, who's there?</a></li>
+    <li><a href="{{ url_for('ch5_ex2') }}">Accessing remote machines</a></li>
+    <li><a href="{{ url_for('ch5_ex3') }}">Hostname resolution</a></li>
+    <li><a href="{{ url_for('ch5_ex4') }}">Introducing Secure Shell protocol</a></li>
+    <li><a href="{{ url_for('ch5_ex5') }}">Server pair bonding</a></li>
+    <li><a href="{{ url_for('ch5_ex6') }}">You wouldn't download a car!</a></li>
+{#    <li><a href="{{ url_for('ch5_ex7') }}">Installing new software</a></li>#}
+{#    <li><a href="{{ url_for('ch5_ex8') }}">Cleaning up</a></li>#}
+</ol>
+<hr class="default">
+<p style="text-align:center;">
+    <button onclick="document.location='{{ url_for('ch5_ex1') }}'">Start</button>
+</p>
+</body>
+
+{% endblock %}

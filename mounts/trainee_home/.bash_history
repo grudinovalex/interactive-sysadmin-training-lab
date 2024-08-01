@@ -1,29 +1,3 @@
-ll
-whatis tred
-ll home_backup/
-sudo yum install tree
-clear
-ll
-tree home_backup/
-clear
-ll
-mkdir /tmp/trainee
-cp -r . /tmp/trainee/
-ll /tmp/trainee/
-clear
-ll
-type exit
-type rmdir
-man exit
-whereis exit
-whatis exit
-help exit
-man exit
-man -h
-man -a exit
-man 2 exit
-man 1 exit | grep -i true
-man 2 exit | grep -i true
 man 3 exit | grep -i true
 man 1 exit | grep -i 'true value'
 echo 'Bugatti' > auta.txt
@@ -998,3 +972,29 @@ vim /etc/hosts
 sudo vim /etc/hosts
 ping server
 clear
+ping rmtlnx1000
+ssh admin@rmtlnx1000
+ll
+cd .ssh/
+ll
+cat known_hosts 
+cd ..
+grep -v "rmtlnx1000" ~/.ssh/known_hosts > ~/.ssh/temp && mv ~/.ssh/temp ~/.ssh/known_hosts
+cat .ssh/known_hosts 
+echo "" > .ssh/known_hosts 
+ssh admin@rmtlnx1000
+ll .ssh/
+ssh-keygen 
+ssh-copy-id admin@rmtlnx1000
+ssh admin@rmtlnx1000
+ll
+ll .ssh/
+pwd
+ll .ssh/
+rm -r /home/trainee/.ssh
+ll .ssh
+ll /mnt/host/
+ssh admin@rmtlnx1000
+ll
+ll -a
+ssh admin@rmtlnx1000

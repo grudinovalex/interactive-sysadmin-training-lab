@@ -1,0 +1,9 @@
+#!/bin/bash
+
+IP=$(host rmtlnx1000 | head -1 | cut -d " " -f 4)
+
+if [ $(grep -c "${IP}.*server" /etc/hosts) == "1" ]; then
+	echo "correct"
+else
+	echo "incorrect"
+fi

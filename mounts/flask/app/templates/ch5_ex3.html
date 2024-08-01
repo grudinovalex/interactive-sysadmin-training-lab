@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<body>
+<h1>Chapter 5</h1>
+<hr class="default">
+<h3>3. Hostname resolution</h3>
+<h5>
+    There is a <b>/etc/hosts</b> file on your system<br>
+    It is used for mapping <b>IP addresses</b> with <b>hostnames</b><br>
+    Add an additional record to <b>/etc/hosts</b> with the IP address of <b>rmtlnx1000</b> mapped to the hostname <b>'server'</b><br>
+    Make sure to use sudo when editing <b>/etc/hosts</b><br>
+</h5>
+{#<p>#}
+{#    <b>background info:</b><br>#}
+{#    in order to do tasks such as creating users & accessing system files, you need to execute commands as root <a href="https://www.ssh.com/academy/pam/root-user-account#:~:text=The%20root%20user%20is%20the,highest%20level%20of%20permissions%20available." target="_blank">root</a><br>#}
+{#    this is done by writing <b>sudo</b> before the command that you want to execute<br>#}
+{#    root password is <b>'istl2024'</b>#}
+{#</p>#}
+<p>.<br>.<br>.<br></p>
+<form action="#" method="post">
+    <h5><input type="submit" value="Check" /></h5>
+</form>
+
+{% if task == 'correct' %}
+    <p>.<br>.<br>.<br></p>
+    <h5 style="color:green; border: 2px solid Green"> TASK COMPLETE! Press 'Next' to continue </h5>
+{% elif task == 'incorrect' %}
+    <p>.<br>.<br>.<br></p>
+    <h5 style="color:red; border: 2px solid Red"> TASK FAILED! Try again </h5>
+    {% if count is defined and count >= 4 %}
+    <h6 style="color:darkslategray; border: 2px solid darkslategray">
+    <details>
+    <summary>
+    Show hint:
+    <span class="icon">⬇️</span>
+    </summary>
+        if you are unsure how to edit the file, look at previous records and follow the same pattern<br>
+        /etc/hosts record format: <br>
+        <code>IP_ADDRESS    HOSTNAME</code><br>
+    </details>
+    </h6>
+    {% endif %}
+{% endif %}
+
+
+{% if task == 'correct' %}
+    <hr class="default">
+    <p style="text-align:center;">
+        <button onclick="document.location='{{ url_for('ch5_ex2') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch5_ex4') }}'">Next--></button>
+    </p>
+{% else %}
+    <hr class="default">
+    <p style="text-align:center;">
+        <button onclick="document.location='{{ url_for('ch5_ex2') }}'"><--Previous</button>
+        <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
+    </p>
+{% endif %}
+</body>
+
+
+{% endblock %}
