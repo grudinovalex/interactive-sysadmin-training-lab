@@ -31,9 +31,9 @@ services:
       - type: bind
         source: ./mounts/flask
         target: /flask
-  server:
+  istl_server:
     image: istl_fedora:latest
-    hostname: server
+    hostname: rmtlnx1000
     container_name: istl_server
     restart: always
     expose:

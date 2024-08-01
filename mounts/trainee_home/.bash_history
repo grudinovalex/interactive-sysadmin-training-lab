@@ -1,11 +1,4 @@
 ll
-ll /tmp/
-mkdir home_backup
-ll
-cp -r Answers/ Archives/ Copy/ Documents/ Files/ Music/ factorial.sh fruits-sorted.txt fruits.txt  sample home_backup/
-clear
-l
-ll
 whatis tred
 ll home_backup/
 sudo yum install tree
@@ -998,3 +991,10 @@ clear
 neo
 cmatrisx
 cmatrix
+clear
+ping server
+ping 172.21.0.2
+vim /etc/hosts
+sudo vim /etc/hosts
+ping server
+clear
