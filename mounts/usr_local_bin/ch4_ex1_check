@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $(wc -l /home/trainee/chapter_4/superfile.txt | cut -d ' ' -f 1) == "23"  ]; then
+if [ $(grep -c "trainee.*99999" /home/trainee/chapter_4/superfile.txt) == "1"  ]; then
 	echo "correct"
 else
 	echo "incorrect"

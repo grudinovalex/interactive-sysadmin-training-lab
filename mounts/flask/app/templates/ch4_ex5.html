@@ -5,11 +5,12 @@
 <body>
 <h1>Chapter 4</h1>
 <hr class="default">
-<h3>2. Friends</h3>
+<h3>5. Joey's file</h3>
 <h5>
-    create a user named <b>joey</b><br>
-    set their password to <b>sitcom123</b><br>
-    use <b>useradd</b> & <b>passwd</b> commands<br>
+    Create a file called <b>joey_file</b><br>
+    Make joey the user owner of the file<br>
+    Make friends the group owner of the file<br>
+    Use commands <b>chown</b> & <b>group</b> to complete the task
 </h5>
 <p>.<br>.<br>.<br></p>
 <form action="#" method="post">
@@ -29,7 +30,13 @@
     Show hint:
     <span class="icon">⬇️</span>
     </summary>
-        make sure you run commands with sudo!<br>
+        you can check who is the owner of a file by long listing: <br>
+        <code>
+            [trainee@istl chapter_4]$ ls -l<br>
+            total 4<br>
+            -rw-r--r-- 1 trainee trainee 750 Jul 31 09:47 superfile.txt<br><br>
+        </code>
+        in this example the user owner is trainee (1st occurence) and group owner is trainee
     </details>
     </h6>
     {% endif %}
@@ -39,17 +46,16 @@
 {% if task == 'correct' %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch4_ex1') }}'"><--Previous</button>
-        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch4_ex3') }}'">Next--></button>
+        <button onclick="document.location='{{ url_for('ch4_ex4') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch4_ex6') }}'">Next--></button>
     </p>
 {% else %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch4_ex1') }}'"><--Previous</button>
+        <button onclick="document.location='{{ url_for('ch4_ex4') }}'"><--Previous</button>
         <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
     </p>
 {% endif %}
 </body>
-
 
 {% endblock %}

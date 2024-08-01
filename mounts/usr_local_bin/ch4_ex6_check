@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $(ls -l /home/trainee/chapter_4/joey_file | grep -c "\-rwxrw-r--") == "1" ]; then
+	echo "correct"
+else
+	echo "incorrect"
+fi

@@ -1,6 +1,3 @@
-unzip Linux_online.zip 
-ll
-clear
 ll
 ll /tmp/
 mkdir home_backup
@@ -998,3 +995,6 @@ neofetch
 ll
 cmatrix
 clear
+neo
+cmatrisx
+cmatrix

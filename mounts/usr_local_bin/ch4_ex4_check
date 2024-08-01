@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $(id joey | grep -c "friends") == "1" ]; then
+	echo "correct"
+else
+	echo "incorrect"
+fi

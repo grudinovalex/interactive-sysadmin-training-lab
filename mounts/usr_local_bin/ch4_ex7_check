@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $(rpm -qa | grep -c "neofetch") == "1" ]; then
+	echo "correct"
+else
+	echo "incorrect"
+fi

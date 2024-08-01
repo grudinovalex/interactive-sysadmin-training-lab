@@ -5,11 +5,10 @@
 <body>
 <h1>Chapter 4</h1>
 <hr class="default">
-<h3>2. Friends</h3>
+<h3>8. Cleaning up</h3>
 <h5>
-    create a user named <b>joey</b><br>
-    set their password to <b>sitcom123</b><br>
-    use <b>useradd</b> & <b>passwd</b> commands<br>
+    Uninstall a package called <b>'neofetch'</b><br>
+    Use command <b>yum</b> to comoplete the task<br>
 </h5>
 <p>.<br>.<br>.<br></p>
 <form action="#" method="post">
@@ -29,7 +28,9 @@
     Show hint:
     <span class="icon">⬇️</span>
     </summary>
-        make sure you run commands with sudo!<br>
+        to uninstall programs from your system, you need to use the package manager <b>yum</b><br>
+        <b>usage: </b><code>yum remove [package name]</code><br>
+        sudo priveleges are required to remove packages
     </details>
     </h6>
     {% endif %}
@@ -39,17 +40,16 @@
 {% if task == 'correct' %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch4_ex1') }}'"><--Previous</button>
-        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch4_ex3') }}'">Next--></button>
+        <button onclick="document.location='{{ url_for('ch4_ex7') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch4_complete') }}'">Next--></button>
     </p>
 {% else %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch4_ex1') }}'"><--Previous</button>
+        <button onclick="document.location='{{ url_for('ch4_ex7') }}'"><--Previous</button>
         <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
     </p>
 {% endif %}
 </body>
-
 
 {% endblock %}

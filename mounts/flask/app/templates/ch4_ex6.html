@@ -5,11 +5,11 @@
 <body>
 <h1>Chapter 4</h1>
 <hr class="default">
-<h3>2. Friends</h3>
+<h3>6. Green light</h3>
 <h5>
-    create a user named <b>joey</b><br>
-    set their password to <b>sitcom123</b><br>
-    use <b>useradd</b> & <b>passwd</b> commands<br>
+    Modify the <a href="https://www.redhat.com/sysadmin/linux-file-permissions-explained" target="_blank">permisions</a> of <b>joey_file</b><br>
+    Set execute permision to the user<br>
+    Set write permsion to the group
 </h5>
 <p>.<br>.<br>.<br></p>
 <form action="#" method="post">
@@ -29,7 +29,8 @@
     Show hint:
     <span class="icon">⬇️</span>
     </summary>
-        make sure you run commands with sudo!<br>
+        modifying linux file permisions is a complicated topic<br>
+        in order to familiarise yourself with it, read <a href="https://www.redhat.com/sysadmin/linux-file-permissions-explained" target="_blank">this article</a><br>
     </details>
     </h6>
     {% endif %}
@@ -39,17 +40,16 @@
 {% if task == 'correct' %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch4_ex1') }}'"><--Previous</button>
-        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch4_ex3') }}'">Next--></button>
+        <button onclick="document.location='{{ url_for('ch4_ex5') }}'"><--Previous</button>
+        <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch4_ex7') }}'">Next--></button>
     </p>
 {% else %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch4_ex1') }}'"><--Previous</button>
+        <button onclick="document.location='{{ url_for('ch4_ex5') }}'"><--Previous</button>
         <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
     </p>
 {% endif %}
 </body>
-
 
 {% endblock %}
