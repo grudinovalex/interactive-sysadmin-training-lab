@@ -10,7 +10,7 @@ RUN sed -i '/tsflags=nodocs/d' /etc/dnf/dnf.conf && \
   rpm -qa | sort | sed 's/-[0-9].*[0-9]*//g' | xargs dnf -y reinstall && \
   yum update -y && \
   yum upgrade -y && \
-	yum install -y man-pages man-db man ncurses vim groff cowsay htop iputils wget git tree nano binutils bind-utils file unzip sshpass nano pcre2-tools openssh-server cracklib-dicts && \
+	yum install -y man-pages man-db man ncurses vim groff cowsay htop iputils wget git tree nano binutils bind-utils file iproute unzip sshpass nano pcre2-tools openssh-server cracklib-dicts && \
 	mandb && \
 	dnf update && \
 	echo 'istl2024' | passwd --stdin root && \
@@ -19,6 +19,7 @@ RUN sed -i '/tsflags=nodocs/d' /etc/dnf/dnf.conf && \
 	adduser trainee && \
 	echo 'istl2024' | passwd --stdin trainee && \
 	usermod -aG wheel trainee && \
+  rm -r /home/trainee/.ssh && \
   mkdir /mnt/host
 
 COPY my_banner_message /etc/motd.d

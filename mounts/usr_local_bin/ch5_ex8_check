@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ip a > /usr/local/bin/files/network_settings.txt
+
+file1="/home/trainee/chapter_5/network_settings.txt"
+file2="/usr/local/bin/files/network_settings.txt"
+
+if cmp -s "$file1" "$file2"; then
+    echo "correct"
+else
+    echo "incorrect"
+fi
