@@ -42,13 +42,13 @@
 {% if task == 'correct' %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch5_ex6') }}'"><--Previous</button>
+        <button onclick="document.location='{{ url_for('ch5_ex7') }}'"><--Previous</button>
         <button style="background-color:green; color:white" onclick="document.location='{{ url_for('ch5_complete') }}'">Next--></button>
     </p>
 {% else %}
     <hr class="default">
     <p style="text-align:center;">
-        <button onclick="document.location='{{ url_for('ch5_ex6') }}'"><--Previous</button>
+        <button onclick="document.location='{{ url_for('ch5_ex7') }}'"><--Previous</button>
         <button style="background-color:red; color:white" onclick="document.location='{{ '#' }}' disabled">Next--></button>
     </p>
 {% endif %}

@@ -41,11 +41,7 @@ services:
     expose:
       - 22
     ports:
-      - 2223:22
-    volumes:
-      - type: bind
-        source: ./mounts/remote_usr_local_bin
-        target: /usr/local/bin      
+      - 2223:22  
       
   wetty:
     image: wetty

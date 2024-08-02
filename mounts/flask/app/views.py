@@ -652,3 +652,7 @@ def ch5_ex8():
 @app.route('/chapter5/complete')
 def ch5_complete():
     return render_template('ch5_complete.html', title="Chapter 5 complete")
+
+@app.route('/restore')
+def restore():
+    return render_template('restore.html', title="Restore contents")
