@@ -3,8 +3,5 @@ pineapple
 Kiwi
 banana
 lemon
+banana (spoiled)
 pear
-orange
-strawberry
-blueberry
-coco

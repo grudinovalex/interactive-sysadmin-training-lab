@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm -r /home/trainee/chapter_2/*
+cp -r /mnt/host/chapter_2_orig/* /home/trainee/chapter_2/

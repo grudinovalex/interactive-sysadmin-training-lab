@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm -r /home/trainee/chapter_4/*
+
+for VARIABLE in $(cat /etc/passwd | cut -d ':' -f1 | tail -n +24)
+do
+    userdel -r $VARIABLE
+done
+
+yum -y remove neofetch
+yum -y install cowsay

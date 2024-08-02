@@ -1,4 +1,0 @@
-uptime -s
-uptime -V
-uptime --nice
-uptime -p+

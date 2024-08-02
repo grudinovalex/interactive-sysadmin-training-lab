@@ -1,0 +1,10 @@
+#!/bin/bash
+
+IP=$(host rmtlnx1000 | head -1 | cut -d " " -f 4)
+
+rm -r /home/trainee/chapter_5/*
+
+sed -ci "/${IP}/d" /etc/hosts
+
+rm /home/trainee/.ssh/id_ed25519
+rm /home/trainee/.ssh/id_ed25519.pub

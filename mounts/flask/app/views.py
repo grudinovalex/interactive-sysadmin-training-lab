@@ -656,3 +656,28 @@ def ch5_complete():
 @app.route('/restore')
 def restore():
     return render_template('restore.html', title="Restore contents")
+
+@app.route('/ch1_restore')
+def ch1_restore():
+    cmd("ch1_restore", "trainee")
+    return render_template('ch1_restore.html', title="Chapter 1 restored")
+
+@app.route('/ch2_restore')
+def ch2_restore():
+    cmd("ch2_restore", "trainee")
+    return render_template('ch2_restore.html', title="Chapter 2 restored")
+
+@app.route('/ch3_restore')
+def ch3_restore():
+    cmd("ch3_restore", "trainee")
+    return render_template('ch3_restore.html', title="Chapter 3 restored")
+
+@app.route('/ch4_restore')
+def ch4_restore():
+    cmd("ch4_restore", "root")
+    return render_template('ch4_restore.html', title="Chapter 4 restored")
+
+@app.route('/ch5_restore')
+def ch5_restore():
+    cmd("ch5_restore", "root")
+    return render_template('ch5_restore.html', title="Chapter 5 restored")

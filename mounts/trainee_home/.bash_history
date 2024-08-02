@@ -1,6 +1,3 @@
-man 3 exit | grep -i true
-man 1 exit | grep -i 'true value'
-echo 'Bugatti' > auta.txt
 ll
 cat auta.txt 
 cat auta.txt | tr 't' 'T'
@@ -998,3 +995,6 @@ ssh admin@rmtlnx1000
 ll
 ll -a
 ssh admin@rmtlnx1000
+uptime
+htop
+echo hello
