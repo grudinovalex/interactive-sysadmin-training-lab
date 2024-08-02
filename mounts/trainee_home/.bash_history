@@ -1,7 +1,3 @@
-cat auta.txt | tr 't' 'T' <
-cat auta.txt | < tr 't' 'T' 
-cat auta.txt |  tr 't' 'T' > auTa.txt
-ll
 cat auta.txt |  tr 't' 'T' 
 cat auta.txt 
 echo 'Bugatti' >auta.txt 
@@ -998,3 +994,7 @@ echo hello
 sudo echo ""
 clear
 ll
+tree
+ps 
+ps aux
+htop

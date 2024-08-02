@@ -19,7 +19,6 @@ RUN sed -i '/tsflags=nodocs/d' /etc/dnf/dnf.conf && \
 	adduser trainee && \
 	echo 'istl2024' | passwd --stdin trainee && \
 	usermod -aG wheel trainee && \
-  rm -r /home/trainee/.ssh && \
   mkdir /mnt/host
 
 COPY my_banner_message /etc/motd.d

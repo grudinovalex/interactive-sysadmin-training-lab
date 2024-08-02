@@ -21,6 +21,7 @@ services:
         target: /mnt/host
   istl_flask:
     image: istl_flask:latest
+    build: ./frontend/flask
     hostname: istl_flask
     container_name: istl_flask
     expose:
@@ -45,6 +46,7 @@ services:
       
   wetty:
     image: wetty
+    build: ./backend/wetty
     hostname: wetty
     container_name: wetty
     restart: always
