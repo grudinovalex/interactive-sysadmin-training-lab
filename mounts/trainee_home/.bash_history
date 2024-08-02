@@ -1,6 +1,3 @@
-ll
-cat auta.txt 
-cat auta.txt | tr 't' 'T'
 cat auta.txt | tr 't' 'T' <
 cat auta.txt | < tr 't' 'T' 
 cat auta.txt |  tr 't' 'T' > auTa.txt
@@ -998,3 +995,6 @@ ssh admin@rmtlnx1000
 uptime
 htop
 echo hello
+sudo echo ""
+clear
+ll
